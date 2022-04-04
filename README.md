@@ -1,1 +1,1 @@
-# lmska-api
+# lmska-api v.1.0
