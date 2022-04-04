@@ -1,26 +1,26 @@
 #%RAML 1.0
 title: LMSka API
 version: 1.0
-baseUri: https://lmska.com/api
-description: by Yaroslav Lukyanchuk
+baseUri: https://a.lmska.com/api
+description: Writer by Yaroslav Lukyanchuk
 
 uses:
-  assets:  assets.lib.raml
+  assets: assets.lib.raml
 
 /auth:
   displayName: Auth
   description: Auth user in LMSka
   put:
     is: [ assets.paging]
-    description: list all reports
+    description: Auth in app
     queryParameters:
       email:
         type: string
         description: Account email
         required: true
-        example: user@lmska.com
+        example: V@rte.im
       password:
-        type: String
+        type: string
         description: Account password
         required: true
         example: 123456      
@@ -46,6 +46,12 @@ uses:
                       created_at:
                       updated_at:
                       full_name: ''
+                  pagination:
+                    total: 1
+                    total_pages: 1
+                    per_page: 2
+                    current_page: 1
+                    current_per_page: 1
                 info: Apk Settings Event Program Reports API
                 message: Get Event Program Reports
   
