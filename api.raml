@@ -60,7 +60,7 @@ uses:
                 message: User was successfully registered but not verified
 /auth:
   displayName: Auth
-  description: Auth in LMSka  
+  description: Login in LMSka  
   put:
     is: [ assets.paging]
     description: Login in LMSka
@@ -648,3 +648,23 @@ uses:
                   data: []
                 course_settings: []
                 scan_mode: 0
+/forgotPassword:
+  displayName: Forgot password?
+  description: Restore forgot password in LMSka  
+  put:
+    is: [ assets.paging]
+    description: Restore password in LMSka
+    queryParameters:
+      email:
+        type: string
+        description: Account email
+        required: true
+        example: V@rte.im     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                message: //TODO: insert text
