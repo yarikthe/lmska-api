@@ -7,12 +7,63 @@ description: Writer by Yaroslav Lukyanchuk
 uses:
   assets: assets.lib.raml
 
+/register:
+  displayName: Register
+  description: Register in LMSka
+  post:
+    is: [ assets.paging]
+    description: Register in LMSka
+    queryParameters:
+      email:
+        type: string
+        description: Email address
+        required: true
+        example: V@rte.im
+      password:
+        type: string
+        description: Password
+        required: true
+        example: 123456
+      telephone_number:
+        type: string
+        description: Phone number
+        required: true
+        example: 0980009999
+      telephone_code:
+        type: string
+        description: Phone number
+        required: true
+        example: +38
+      first_name:
+        type: string
+        description: First Name
+        required: true
+        example: John
+      last_name:
+        type: string
+        description: Last Name
+        required: true
+        example: Doe
+      role_id:
+        type: int
+        description: Role ID
+        required: true
+        example: 5 (Student)
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                success: true
+                message: User was successfully registered but not verified
 /auth:
   displayName: Auth
-  description: Auth user in LMSka
+  description: Auth in LMSka  
   put:
     is: [ assets.paging]
-    description: Auth in app
+    description: Login in LMSka
     queryParameters:
       email:
         type: string
@@ -30,28 +81,570 @@ uses:
           application/json:
             type: object
             examples:
-              get-reports:
-                success: true
-                data:
-                  data:
-                  - 
+              result:
+                access_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYS5sbXNrYS5jb21cL2FwaVwvYXV0aCIsImlhdCI6MTY0OTE1NzEwNywiZXhwIjoxNjQ5MjQzNTA3LCJuYmYiOjE2NDkxNTcxMDcsImp0aSI6IktZWXJQMnp1TWxIdVBHSlEiLCJzdWIiOjEsInBydiI6IjYwNjU4YTI4ZDVmM2ZhODNlMTZiNTIxY2M3YzM0NTI2YjAwMTFiYTYifQ.H4RmhOKIOpXO8qVbqCOQ9mbEqXZbMP8vC6zNcbJOEgs
+                permissions:
+                - id: 1
+                  name: Can see detail of the course
+                  permission: can_show_course
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 2
+                  name: Can see all courses
+                  permission: can_index_courses
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 3
+                  name: Can delete the course
+                  permission: can_destroy_course
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 4
+                  name: Can create the new course
+                  permission: can_store_course
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 5
+                  name: Can update the existing course
+                  permission: can_update_course
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 6
+                  name: Can attach user to course
+                  permission: can_attach_user_to_course
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 7
+                  name: Can detach user from course
+                  permission: can_detach_user_from_course
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 8
+                  name: Can update profile
+                  permission: can_update_profile
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 9
+                  name: Can show profile
+                  permission: can_show_profile
+                  group:
+                    id: 2
+                    name: Courses
+                    group: course
+                - id: 10
+                  name: Can store user
+                  permission: can_store_user
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 11
+                  name: Can update user
+                  permission: can_update_user
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 12
+                  name: Can destroy user
+                  permission: can_destroy_user
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 13
+                  name: Can show user
+                  permission: can_show_user
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 14
+                  name: Can see all users
+                  permission: can_index_users
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 15
+                  name: Can change user password
+                  permission: can_change_user_password
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 16
+                  name: Can change user active status
+                  permission: can_change_user_activation_status
+                  group:
+                    id: 4
+                    name: Users
+                    group: user
+                - id: 17
+                  name: Can update course ticket
+                  permission: can_update_course_ticket
+                  group:
                     id: 10
-                    title: Demo
-                    time_report: '2022-02-22 12:18:13'
-                    file: http://127.0.0.1:8000/storage/files/Screenshot 2022-02-22 at 10.12.51_1645537041.png
-                    speaker:
-                      id: 119
-                      user_id: 5
-                      event_id: 3200
-                      created_at:
-                      updated_at:
-                      full_name: ''
-                  pagination:
-                    total: 1
-                    total_pages: 1
-                    per_page: 2
-                    current_page: 1
-                    current_per_page: 1
-                info: Apk Settings Event Program Reports API
-                message: Get Event Program Reports
-  
+                    name: Course ticket group
+                    group: ticket
+                - id: 18
+                  name: Can destroy course ticket
+                  permission: can_destroy_course_ticket
+                  group:
+                    id: 10
+                    name: Course ticket group
+                    group: ticket
+                - id: 19
+                  name: Can index course tickets
+                  permission: can_index_course_tickets
+                  group:
+                    id: 10
+                    name: Course ticket group
+                    group: ticket
+                - id: 20
+                  name: Can generate course ticket holder pdf sticker
+                  permission: can_generate_course_ticket_holder_pdf_sticker
+                  group:
+                    id: 15
+                    name: Course ticket holder
+                    group: course_ticket_holder
+                - id: 21
+                  name: Can show course ticket schema
+                  permission: can_show_course_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 22
+                  name: Can index course ticket schemas
+                  permission: can_index_course_ticket_schemas
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 23
+                  name: Can destroy course ticket schema
+                  permission: can_destroy_course_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 24
+                  name: Can store course ticket schema
+                  permission: can_store_course_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 25
+                  name: Can update course ticket schema
+                  permission: can_update_course_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 26
+                  name: Can restore course ticket schema
+                  permission: can_restore_course_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 27
+                  name: Can attach options to ticket schema
+                  permission: can_attach_options_to_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 28
+                  name: Can detach options from ticket schema
+                  permission: can_detach_options_to_ticket_schema
+                  group:
+                    id: 5
+                    name: Course ticket schemas
+                    group: course_ticket_schema
+                - id: 29
+                  name: Can store course ticket schema option
+                  permission: can_store_course_ticket_schema_option
+                  group:
+                    id: 6
+                    name: Course ticket schema options
+                    group: course_ticket_schema_option
+                - id: 30
+                  name: Can update course ticket schema option
+                  permission: can_update_course_ticket_schema_option
+                  group:
+                    id: 6
+                    name: Course ticket schema options
+                    group: course_ticket_schema_option
+                - id: 31
+                  name: Can index course ticket schema options
+                  permission: can_index_course_ticket_schema_options
+                  group:
+                    id: 6
+                    name: Course ticket schema options
+                    group: course_ticket_schema_option
+                - id: 32
+                  name: Can destroy course ticket schema option
+                  permission: can_destroy_course_ticket_schema_option
+                  group:
+                    id: 6
+                    name: Course ticket schema options
+                    group: course_ticket_schema_option
+                - id: 33
+                  name: Can store course ticket schema price by count
+                  permission: can_store_course_ticket_schema_price_by_count
+                  group:
+                    id: 7
+                    name: Course ticket schema price by count group
+                    group: course_ticket_schema_ticket_by_price
+                - id: 34
+                  name: Can index course ticket schema prices by count
+                  permission: can_index_course_ticket_schema_prices_by_count
+                  group:
+                    id: 7
+                    name: Course ticket schema price by count group
+                    group: course_ticket_schema_ticket_by_price
+                - id: 35
+                  name: Can destroy course ticket schema price by count
+                  permission: can_destroy_course_ticket_schema_price_by_count
+                  group:
+                    id: 7
+                    name: Course ticket schema price by count group
+                    group: course_ticket_schema_ticket_by_price
+                - id: 36
+                  name: Can store course ticket schema price by datetime
+                  permission: can_store_course_ticket_schema_price_by_datetime
+                  group:
+                    id: 8
+                    name: Course ticket schema price by datetime group
+                    group: course_ticket_schema_ticket_by_datetime
+                - id: 37
+                  name: Can index course ticket schema prices by datetime
+                  permission: can_index_course_ticket_schema_prices_by_datetime
+                  group:
+                    id: 8
+                    name: Course ticket schema price by datetime group
+                    group: course_ticket_schema_ticket_by_datetime
+                - id: 38
+                  name: Can destroy course ticket schema price by datetime
+                  permission: can_destroy_course_ticket_schema_price_by_datetime
+                  group:
+                    id: 8
+                    name: Course ticket schema price by datetime group
+                    group: course_ticket_schema_ticket_by_datetime
+                - id: 39
+                  name: Can store course order
+                  permission: can_store_course_order
+                  group:
+                    id: 9
+                    name: Course order group
+                    group: course_order
+                - id: 40
+                  name: Can show course order
+                  permission: can_show_course_order
+                  group:
+                    id: 9
+                    name: Course order group
+                    group: course_order
+                - id: 41
+                  name: Can make course order report
+                  permission: can_make_course_order_report
+                  group:
+                    id: 9
+                    name: Course order group
+                    group: course_order
+                - id: 42
+                  name: Can update course order
+                  permission: can_update_course_order
+                  group:
+                    id: 9
+                    name: Course order group
+                    group: course_order
+                - id: 43
+                  name: Can destroy course order
+                  permission: can_destroy_course_order
+                  group:
+                    id: 9
+                    name: Course order group
+                    group: course_order
+                - id: 44
+                  name: Can index course orders
+                  permission: can_index_course_orders
+                  group:
+                    id: 9
+                    name: Course order group
+                    group: course_order
+                - id: 45
+                  name: Can store promo code
+                  permission: can_store_promo_code_order
+                  group:
+                    id: 11
+                    name: Course promo code group
+                    group: course_promo_code
+                - id: 46
+                  name: Can show promo code
+                  permission: can_show_promo_code_order
+                  group:
+                    id: 11
+                    name: Course promo code group
+                    group: course_promo_code
+                - id: 47
+                  name: Can update promo code
+                  permission: can_update_promo_code_order
+                  group:
+                    id: 11
+                    name: Course promo code group
+                    group: course_promo_code
+                - id: 48
+                  name: Can destroy promo code
+                  permission: can_destroy_promo_code_order
+                  group:
+                    id: 11
+                    name: Course promo code group
+                    group: course_promo_code
+                - id: 49
+                  name: Can index promo codes
+                  permission: can_index_promo_code_orders
+                  group:
+                    id: 11
+                    name: Course promo code group
+                    group: course_promo_code
+                - id: 50
+                  name: Can store course ticket
+                  permission: can_store_course_ticket
+                  group:
+                    id: 10
+                    name: Course ticket group
+                    group: ticket
+                - id: 51
+                  name: Can restore course ticket
+                  permission: can_restore_course_ticket
+                  group:
+                    id: 10
+                    name: Course ticket group
+                    group: ticket
+                - id: 52
+                  name: Can store course ticket form
+                  permission: can_store_course_form
+                  group:
+                    id: 12
+                    name: Course form group
+                    group: course_form
+                - id: 53
+                  name: Can update course form
+                  permission: can_update_course_form
+                  group:
+                    id: 12
+                    name: Course form group
+                    group: course_form
+                - id: 54
+                  name: 'Can destroy course form '
+                  permission: can_destroy_course_form
+                  group:
+                    id: 12
+                    name: Course form group
+                    group: course_form
+                - id: 55
+                  name: Can show form
+                  permission: can_show_course_form
+                  group:
+                    id: 12
+                    name: Course form group
+                    group: course_form
+                - id: 56
+                  name: Can store course payment system for fondy
+                  permission: can_store_payment_system_fondy
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 57
+                  name: Can update course payment system for fondy
+                  permission: can_update_payment_system_fondy
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 58
+                  name: Can destroy course payment system for fondy
+                  permission: can_destroy_payment_system_fondy
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 59
+                  name: Can show course payment system for fondy
+                  permission: can_show_payment_system_fondy
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 60
+                  name: Can store course payment system for liqpay
+                  permission: can_store_payment_system_liqpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 61
+                  name: Can update course payment system for liqpay
+                  permission: can_update_payment_system_liqpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 62
+                  name: Can destroy course payment system for liqpay
+                  permission: can_destroy_payment_system_liqpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 63
+                  name: Can show course payment system for liqpay
+                  permission: can_show_payment_system_liqpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 64
+                  name: Can store course payment system for wayforpay
+                  permission: can_store_payment_system_wayforpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 65
+                  name: Can update course payment system for wayforpay
+                  permission: can_update_payment_system_wayforpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 66
+                  name: Can destroy course payment system for wayforpay
+                  permission: can_destroy_payment_system_wayforpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 67
+                  name: Can show course payment system for wayforpay
+                  permission: can_show_payment_system_wayforpay
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 68
+                  name: Can show course payment system for non-cash
+                  permission: can_show_payment_system_non-cash
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 69
+                  name: Can destroy course payment system for non-cash
+                  permission: can_destroy_payment_system_non-cash
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 70
+                  name: Can update course payment system for non-cash
+                  permission: can_update_payment_system_non-cash
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 71
+                  name: Can store course payment system for non-cash
+                  permission: can_store_payment_system_non-cash
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 72
+                  name: Can receive all payment systems
+                  permission: can_index_payment_systems
+                  group:
+                    id: 13
+                    name: Course payment system group
+                    group: course_payment_system_group
+                - id: 73
+                  name: Can store course ticket holder check in
+                  permission: can_store_course_ticket_holder_check_in
+                  group:
+                    id: 14
+                    name: Course ticket holder check in group
+                    group: check_in
+                - id: 74
+                  name: Can update course ticket holder check in
+                  permission: can_update_course_ticket_holder_check_in
+                  group:
+                    id: 14
+                    name: Course ticket holder check in group
+                    group: check_in
+                - id: 75
+                  name: Can print course ticket holder check in
+                  permission: can_print_course_ticket_holder_check_ins
+                  group:
+                    id: 14
+                    name: Course ticket holder check in group
+                    group: check_in
+                - id: 76
+                  name: Can destroy course ticket holder check in
+                  permission: can_destroy_course_ticket_holder_check_in
+                  group:
+                    id: 14
+                    name: Course ticket holder check in group
+                    group: check_in
+                - id: 77
+                  name: Can show course ticket holder check in
+                  permission: can_show_course_ticket_holder_check_in
+                  group:
+                    id: 14
+                    name: Course ticket holder check in group
+                    group: check_in
+                - id: 78
+                  name: Can receive all course ticket holder check ins
+                  permission: can_index_course_ticket_holder_check_ins
+                  group:
+                    id: 14
+                    name: Course ticket holder check in group
+                    group: check_in
+                email: v@rte.im
+                first_name: Vetaska
+                last_name: Муди
+                telephone_code: '380'
+                telephone_number: '678455588'
+                is_check_in: 1
+                is_print_sticker: 1
+                role:
+                  id: 1
+                  name: Administrator
+                  role: admin
+                id: 1
+                zones: []
+                user_hash:
+                print_servers:
+                  data: []
+                course_settings: []
+                scan_mode: 0

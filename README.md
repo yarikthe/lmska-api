@@ -1,2 +1,4 @@
 # lmska-api v.1.0
-# raml2html api.raml > index.html 
+# Run: 
+# <code> raml2html api.raml > index.html  </code>
+# <a href="https://www.json2yaml.com/">Online convert Json to Raml</a> 
