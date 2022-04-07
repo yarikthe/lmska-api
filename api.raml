@@ -2,7 +2,7 @@
 title: LMSka API
 version: 1.0
 baseUri: https://a.lmska.com/api
-description: Writer by Yaroslav Lukyanchuk
+description: © 2022. LMSka - Learning Managment System by Axonax
 
 uses:
   assets: assets.lib.raml
@@ -667,7 +667,7 @@ uses:
             type: object
             examples:
               result:
-                message: //TODO: insert text
+                message: "Undefined constant App\\Models\\Api\\UserRole::CUSTOMER (View: /var/www/Lmska/backend/resources/views/email/api/user/forgot-password.blade.php)"
 /courses:
   displayName: Courses
   description: Get courses data in LMSka
@@ -681,4 +681,187 @@ uses:
             type: object
             examples:
               result:
-                message: //TODO: insert text
+                data:
+                - id: 2
+                  title: Тестовый курс
+                  description: "<p>Описание для тестового курса</p>"
+                  address: online
+                  address_lat:
+                  address_lng:
+                  registration_start: '2021-12-31 13:11:00'
+                  registration_end: '2025-12-31 13:11:00'
+                  course_start: '2021-12-31 13:11:00'
+                  course_end: '2025-12-31 13:11:00'
+                  owner:
+                    id: 3
+                    first_name: Андрей
+                    last_name: Голуб
+                    avatar: https://a.lmska.com/storage/users/3/magnar.jpeg
+                    telephone_code: '380'
+                    telephone_number: '676654620'
+                    company:
+                    email: a@rte.im
+                    role:
+                      id: 1
+                      name: Administrator
+                      role: admin
+                  setting:
+                    status:
+                      id: 2
+                      name: Active
+                      status: active
+                    payment_currency:
+                      id: 1
+                      name: Ukrainian Hryvnia
+                      currency: hryvnia
+                      iso_code: uah
+                    check_in:
+                    facebook_pixel:
+                    yandex_metrika_id:
+                    google_conversion_id:
+                    google_tag_manager_id:
+                    fix_commission: '0.000'
+                    percent_commission: '0.00'
+                    self_system_commission_included_payment: true
+                    payment_system_commission_included_payment: true
+                    payment_activated: true
+                    lesson_schema_graph: "[]"
+                    use_lesson_schema_graph: 0
+                  logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                  logo_type: png
+                  subway_station:
+                  location_name:
+                  created_at: '2021-12-31T11:11:57.000000Z'
+                  updated_at: '2022-04-05T07:32:06.000000Z'
+                  fill_step:
+                    id: 1
+                    main_setting_step: 1
+                    ticket_schema_step: 1
+                    mail_test_step: 0
+                    register_form_step: 1
+                    site_course_step: 1
+                    payment_method_step: 1
+                    course_id: 2
+                    created_at: '2021-12-31T11:11:58.000000Z'
+                    updated_at: '2022-04-07T10:47:09.000000Z'
+                    promo_codes_step: 0
+                    streaming_links_step: 0
+                  statistics: []
+                  finances: []
+                  stream_schemas: []
+                  fee: ''
+/courses/{id}/lessons:
+  displayName: Lessons of Course
+  description: Get lessons data of courses in LMSka
+  get:
+    is: [ assets.paging]
+    description: Get lessons data of courses in LMSka
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 14
+                  title: Второй урок
+                  description:
+                  category_text:
+                  content:
+                  - id: 608
+                    position: 0
+                    content: '{"id": "431387450818584", "type": "video", "hidden": false, "preview":
+                      "https://a.lmska.com/storage/course/previews/video.png", "video_url": "materials/2/3.
+                      HTML теги (теория).mp4"}'
+                    lesson_id: 14
+                    deleted_at:
+                    created_at:
+                    updated_at:
+                  lesson_start:
+                  lesson_end:
+                  is_demo: 1
+                  is_stop: 0
+                  is_homework: 1
+                  is_video_lesson: 0
+                  test:
+                    id: 9
+                    creator_id: 3
+                    deleted_at:
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-01-31T10:56:49.000000Z'
+                    lesson_id: 14
+                    course_id:
+                    homework_id: 4
+                    start_time:
+                    end_time:
+                    total_score: 0
+                    visible: 1
+                    shuffle: 0
+                  ticket_schemas:
+                  - id: 1
+                    title: Standart
+                    description: test12
+                    original_price: '5.000'
+                    price: '5.000'
+                    color: "#000000"
+                    type:
+                      id: 2
+                      name: Online
+                      type: online
+                    moderation_type:
+                      id: 1
+                      name: Auto
+                      type: auto
+                    available_amount: -6
+                    all_available_amount: 1
+                    max_amount_per_order: 1
+                    min_amount_per_order: 1
+                    options: []
+                    start_sale: '2021-12-31 13:11:00'
+                    end_sale: '2025-12-31 13:11:00'
+                    created_at: '2021-12-31T11:11:58.000000Z'
+                    updated_at: '2022-04-01T15:03:02.000000Z'
+                    deleted_at:
+                    ticket_email_text:
+                    status: 1
+                    position: 0
+                    time_data: []
+                  - id: 3
+                    title: Standart2
+                    description: test
+                    original_price: '9.000'
+                    price: '9.000'
+                    color: "#fb0909"
+                    type:
+                      id: 2
+                      name: Online
+                      type: online
+                    moderation_type:
+                      id: 1
+                      name: Auto
+                      type: auto
+                    available_amount: 1
+                    all_available_amount: 1
+                    max_amount_per_order: 1
+                    min_amount_per_order: 1
+                    options: []
+                    start_sale: '2022-01-23 00:00:00'
+                    end_sale: '2026-01-31 23:59:59'
+                    created_at: '2022-01-24T11:06:12.000000Z'
+                    updated_at: '2022-04-01T14:07:06.000000Z'
+                    deleted_at:
+                    ticket_email_text:
+                    status: 1
+                    position: 1
+                    time_data: []
+                  position: 0
+                  user_info:
+                    mark:
+                    time_spent_in_seconds:
+                  comment_count: 0
+                  rates:
+                    average_rate: 5
+                    count: 1
+                    rate_weight: '{"5":100,"4":0,"3":0,"2":0,"1":0}'
+
