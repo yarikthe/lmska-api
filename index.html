@@ -1176,4 +1176,307 @@ pre code {
       }
     }
   ]
-}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li></ul></div></div></div></div></body></html>
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="users_courses" class="panel-title">Users courses</h3></div><div class="panel-body"><div class="top-resource-description"><p>Get users courses in LMSka</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_courses"><span class="parent"></span>/users/courses</a> <span class="methods"><a href="#users_courses_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_users_courses" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_courses_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get users courses in LMSka</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_courses_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/users/courses</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get users courses in LMSka</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_courses_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_courses_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>{
+  "data": {
+    "0": {
+      "id": 7,
+      "title": "Материалы RegToEVENT",
+      "description": "&lt;p&gt;Ознакомительный курс про RegToEVENT. Что это такое и чем оно пригодится организаторам ивентов&lt;/p&gt;",
+      "address": "online",
+      "address_lat": null,
+      "address_lng": null,
+      "registration_start": "2022-03-28 17:36:00",
+      "registration_end": "2022-12-31 17:36:00",
+      "course_start": "2022-03-31 15:13:00",
+      "course_end": "2022-12-31 17:36:00",
+      "owner": {
+        "id": 29,
+        "first_name": "Люба",
+        "last_name": "Любов",
+        "avatar": "https://a.lmska.com/storage/default.png",
+        "telephone_code": "380",
+        "telephone_number": "934561649",
+        "company": null,
+        "email": "inforegtoevent@gmail.com",
+        "role": {
+          "id": 2,
+          "name": "Owner",
+          "role": "owner"
+        }
+      },
+      "setting": {
+        "status": {
+          "id": 2,
+          "name": "Active",
+          "status": "active"
+        },
+        "category": {
+          "id": 1,
+          "name": "Conference",
+          "category": "conference"
+        },
+        "subject": {
+          "id": 1,
+          "name": "Informational technologies",
+          "subject": "information_technologies"
+        },
+        "recount_currency": null,
+        "payment_currency": {
+          "id": 1,
+          "name": "Ukrainian Hryvnia",
+          "currency": "hryvnia",
+          "iso_code": "uah"
+        },
+        "check_in": null,
+        "language": {
+          "id": 2,
+          "name": "Ukrainian",
+          "language": "ukrainian",
+          "iso_code": "ua"
+        },
+        "country": {
+          "id": 1,
+          "name": "Ukraine",
+          "country": "ukraine",
+          "iso_code": "ua",
+          "languages": [
+            {
+              "id": 2,
+              "name": "Ukrainian",
+              "language": "ukrainian",
+              "iso_code": "ua"
+            },
+            {
+              "id": 3,
+              "name": "Russian",
+              "language": "russian",
+              "iso_code": "ru"
+            },
+            {
+              "id": 6,
+              "name": "Hungarian",
+              "language": "hungarian",
+              "iso_code": "hu"
+            },
+            {
+              "id": 7,
+              "name": "Romanian",
+              "language": "romanian",
+              "iso_code": "ro"
+            }
+          ],
+          "currencies": [
+            {
+              "id": 1,
+              "name": "Ukrainian Hryvnia",
+              "currency": "hryvnia",
+              "iso_code": "uah"
+            },
+            {
+              "id": 4,
+              "name": "Russian Ruble",
+              "currency": "ruble",
+              "iso_code": "rub"
+            }
+          ]
+        },
+        "fix_commission": "0.000",
+        "percent_commission": "0.00",
+        "self_system_commission_included_payment": true,
+        "payment_system_commission_included_payment": true,
+        "payment_activated": true,
+        "ticket_description_top": null,
+        "ticket_description_bottom": null,
+        "contact_email": null,
+        "is_contact_email_verified": 0,
+        "contact_phone": null,
+        "contact_name": null,
+        "offer_text": null,
+        "affiliate_text": null,
+        "registration_first_step_text": "\r\n    &lt;p&gt;EN:&lt;/p&gt;\r\n&lt;p&gt;When registering for the Материалы RegToEVENT course, you (or someone else) specified this email as a contact email. An account has been created for you at &lt;a href=\"https://c.lmska.net\"&gt;https://c.lmska.net&lt;/a&gt;\r\nYou can see your orders and change ticket data in your account on your own&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;p&gt;УК:&lt;/p&gt;\r\n&lt;p&gt;При реєстрації на подію Материалы RegToEVENT ви (або хтось інший) вказали цей email як контактний. Вам був створений кабінет за адресою &lt;a href=\"https://c.lmska.net\"&gt;https://c.lmska.net&lt;/a&gt;\r\nВи можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;p&gt;РУ:&lt;/p&gt;\r\n&lt;p&gt;При регистрации на событие Материалы RegToEVENT вы ( или кто то другой) указали этот email как контактный. Вам был создан кабинет по адресу\r\n&lt;a href=\"https://c.lmska.net\"&gt;https://c.lmska.net&lt;/a&gt;\r\nВы можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно&lt;/p&gt;",
+        "ticket_with_text": null,
+        "online_text": null,
+        "course_url": null,
+        "fb_link_group": null,
+        "available_duplicate_contacts": 0,
+        "use_ticket_schema_emails": 0,
+        "lesson_schema_graph": "{\"edges\": {\"edge11\": {\"source\": \"91\", \"target\": \"92\"}, \"edge12\": {\"source\": \"92\", \"target\": \"93\"}, \"edge_1\": {\"source\": \"81\", \"target\": \"82\"}, \"edge_2\": {\"source\": \"82\", \"target\": \"83\"}, \"edge_3\": {\"source\": \"83\", \"target\": \"85\"}, \"edge_4\": {\"source\": \"85\", \"target\": \"84\"}, \"edge_5\": {\"source\": \"84\", \"target\": \"86\"}, \"edge_6\": {\"source\": \"87\", \"target\": \"88\"}, \"edge_7\": {\"source\": \"88\", \"target\": \"89\"}, \"edge_8\": {\"source\": \"89\", \"target\": \"90\"}, \"edge_9\": {\"source\": \"90\", \"target\": \"91\"}, \"edge_10\": {\"source\": \"86\", \"target\": \"87\"}, \"edge_11\": {\"source\": \"93\", \"target\": \"94\"}, \"edge_12\": {\"source\": \"94\", \"target\": \"95\"}, \"edge_13\": {\"source\": \"95\", \"target\": \"96\"}, \"edge_14\": {\"source\": \"96\", \"target\": \"97\"}, \"edge_15\": {\"source\": \"97\", \"target\": \"98\"}}, \"nodes\": {\"81\": {\"url\": \"/course/7/lessons/81\", \"name\": \"Что такое б\\nилетный опе\\nратор\", \"radius\": 88}, \"82\": {\"url\": \"/course/7/lessons/82\", \"name\": \"Что можно д\\nелать с Reg\\nToEVENT\", \"radius\": 91}, \"83\": {\"url\": \"/course/7/lessons/83\", \"name\": \"Типы билетов в \\nRegToEVENT\", \"radius\": 77}, \"84\": {\"url\": \"/course/7/lessons/84\", \"name\": \"Апгрейд билета\", \"radius\": 84}, \"85\": {\"url\": \"/course/7/lessons/85\", \"name\": \"Дополнительные \\nопции\", \"radius\": 77}, \"86\": {\"url\": \"/course/7/lessons/86\", \"name\": \"Расписание \\nцен\", \"radius\": 85}, \"87\": {\"url\": \"/course/7/lessons/87\", \"name\": \"Форма регис\\nтрации\", \"radius\": 85}, \"88\": {\"url\": \"/course/7/lessons/88\", \"name\": \"Интеграция \\nформы\", \"radius\": 85}, \"89\": {\"url\": \"/course/7/lessons/89\", \"name\": \"Оплата биле\\nтов\", \"radius\": 85}, \"90\": {\"url\": \"/course/7/lessons/90\", \"name\": \"Сайт событи\\nя\", \"radius\": 85}, \"91\": {\"url\": \"/course/7/lessons/91\", \"name\": \"Оформление \\nбилета\", \"radius\": 85}, \"92\": {\"url\": \"/course/7/lessons/92\", \"name\": \"Промокоды\", \"radius\": 85}, \"93\": {\"url\": \"/course/7/lessons/93\", \"name\": \"Онлайн тран\\nсляции\", \"radius\": 84}, \"94\": {\"url\": \"/course/7/lessons/94\", \"name\": \"Чат-боты и \\nрассылки\", \"radius\": 88}, \"95\": {\"url\": \"/course/7/lessons/95\", \"name\": \"Роли пользо\\nвателей\", \"radius\": 88}, \"96\": {\"url\": \"/course/7/lessons/96\", \"name\": \"Дополнитель\\nные возможн\\nости\", \"radius\": 85}, \"97\": {\"url\": \"/course/7/lessons/97\", \"name\": \"Возможные сценарии\", \"radius\": 88}, \"98\": {\"url\": \"/course/7/lessons/98\", \"name\": \"Часто задаваемые \\nвопросы\", \"radius\": 85}, \"101\": {\"url\": \"/course/7/lessons/101\", \"name\": \"Первый. Фича...\", \"radius\": 60}}, \"layouts\": {\"nodes\": {\"81\": {\"x\": -180, \"y\": -190}, \"82\": {\"x\": 50, \"y\": -190}, \"83\": {\"x\": 270, \"y\": -190}, \"84\": {\"x\": 710, \"y\": -190}, \"85\": {\"x\": 480, \"y\": -190}, \"86\": {\"x\": 960, \"y\": -190}, \"87\": {\"x\": 970, \"y\": 40}, \"88\": {\"x\": 720, \"y\": 40}, \"89\": {\"x\": 480, \"y\": 40}, \"90\": {\"x\": 260, \"y\": 40}, \"91\": {\"x\": 30, \"y\": 40}, \"92\": {\"x\": -180, \"y\": 40}, \"93\": {\"x\": -180, \"y\": 280}, \"94\": {\"x\": 40, \"y\": 280}, \"95\": {\"x\": 260, \"y\": 280}, \"96\": {\"x\": 500, \"y\": 280}, \"97\": {\"x\": 730, \"y\": 280}, \"98\": {\"x\": 970, \"y\": 270}, \"99\": {\"x\": 1100, \"y\": 270}, \"100\": {\"x\": 1230, \"y\": 270}, \"101\": {\"x\": 1360, \"y\": 270}}}}",
+        "use_lesson_schema_graph": 0
+      },
+      "logo": "https://a.lmska.com/storage/logos/courses/7/лого курс.jpg",
+      "logo_type": "png",
+      "subway_station": null,
+      "location_name": null,
+      "created_at": "2022-03-28T14:44:08.000000Z",
+      "updated_at": "2022-04-07T18:40:10.000000Z",
+      "fill_step": {
+        "id": 5,
+        "main_setting_step": 1,
+        "ticket_schema_step": 1,
+        "mail_test_step": 0,
+        "register_form_step": 1,
+        "site_course_step": 1,
+        "payment_method_step": 1,
+        "course_id": 7,
+        "created_at": "2022-03-28T14:44:10.000000Z",
+        "updated_at": "2022-04-07T18:40:42.000000Z",
+        "promo_codes_step": 1,
+        "streaming_links_step": 0
+      },
+      "statistics": [],
+      "finances": [],
+      "stream_schemas": [],
+      "fee": ""
+    },
+    "17": {
+      "id": 2,
+      "title": "Тестовый курс",
+      "description": "&lt;p&gt;Описание для тестового курса&lt;/p&gt;",
+      "address": "online",
+      "address_lat": null,
+      "address_lng": null,
+      "registration_start": "2021-12-31 13:11:00",
+      "registration_end": "2025-12-31 13:11:00",
+      "course_start": "2021-12-31 13:11:00",
+      "course_end": "2025-12-31 13:11:00",
+      "owner": {
+        "id": 3,
+        "first_name": "Андрей",
+        "last_name": "Голуб",
+        "avatar": "https://a.lmska.com/storage/users/3/magnar.jpeg",
+        "telephone_code": "380",
+        "telephone_number": "676654620",
+        "company": null,
+        "email": "a@rte.im",
+        "role": {
+          "id": 1,
+          "name": "Administrator",
+          "role": "admin"
+        }
+      },
+      "setting": {
+        "status": {
+          "id": 2,
+          "name": "Active",
+          "status": "active"
+        },
+        "category": {
+          "id": 1,
+          "name": "Conference",
+          "category": "conference"
+        },
+        "subject": {
+          "id": 1,
+          "name": "Informational technologies",
+          "subject": "information_technologies"
+        },
+        "recount_currency": null,
+        "payment_currency": {
+          "id": 1,
+          "name": "Ukrainian Hryvnia",
+          "currency": "hryvnia",
+          "iso_code": "uah"
+        },
+        "check_in": null,
+        "language": {
+          "id": 2,
+          "name": "Ukrainian",
+          "language": "ukrainian",
+          "iso_code": "ua"
+        },
+        "country": {
+          "id": 1,
+          "name": "Ukraine",
+          "country": "ukraine",
+          "iso_code": "ua",
+          "languages": [
+            {
+              "id": 2,
+              "name": "Ukrainian",
+              "language": "ukrainian",
+              "iso_code": "ua"
+            },
+            {
+              "id": 3,
+              "name": "Russian",
+              "language": "russian",
+              "iso_code": "ru"
+            },
+            {
+              "id": 6,
+              "name": "Hungarian",
+              "language": "hungarian",
+              "iso_code": "hu"
+            },
+            {
+              "id": 7,
+              "name": "Romanian",
+              "language": "romanian",
+              "iso_code": "ro"
+            }
+          ],
+          "currencies": [
+            {
+              "id": 1,
+              "name": "Ukrainian Hryvnia",
+              "currency": "hryvnia",
+              "iso_code": "uah"
+            },
+            {
+              "id": 4,
+              "name": "Russian Ruble",
+              "currency": "ruble",
+              "iso_code": "rub"
+            }
+          ]
+        },
+        "fix_commission": "0.000",
+        "percent_commission": "0.00",
+        "self_system_commission_included_payment": true,
+        "payment_system_commission_included_payment": true,
+        "payment_activated": true,
+        "ticket_description_top": null,
+        "ticket_description_bottom": null,
+        "contact_email": null,
+        "is_contact_email_verified": 0,
+        "contact_phone": null,
+        "contact_name": null,
+        "offer_text": null,
+        "affiliate_text": null,
+        "registration_first_step_text": "\n\n    &lt;p&gt;EN:&lt;/p&gt;\n&lt;p&gt;When registering for the Тестовый курс course, you (or someone else) specified this email as a contact email. An account has been created for you at &lt;a href=\"https://c.rte.im\"&gt;https://c.rte.im&lt;/a&gt;\nYou can see your orders and change ticket data in your account on your own&lt;/p&gt;\n&lt;br/&gt;\n&lt;p&gt;УК:&lt;/p&gt;\n&lt;p&gt;При реєстрації на подію Тестовый курс ви (або хтось інший) вказали цей email як контактний. Вам був створений кабінет за адресою &lt;a href=\"https://c.rte.im\"&gt;https://c.rte.im&lt;/a&gt;\nВи можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно&lt;/p&gt;\n&lt;br/&gt;\n&lt;p&gt;РУ:&lt;/p&gt;\n&lt;p&gt;При регистрации на событие Тестовый курс вы ( или кто то другой) указали этот email как контактный. Вам был создан кабинет по адресу\n&lt;a href=\"https://c.rte.im\"&gt;https://c.rte.im&lt;/a&gt;\nВы можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно&lt;/p&gt;",
+        "ticket_with_text": null,
+        "online_text": null,
+        "course_url": null,
+        "fb_link_group": null,
+        "available_duplicate_contacts": 0,
+        "use_ticket_schema_emails": 0,
+        "lesson_schema_graph": "[]",
+        "use_lesson_schema_graph": 0
+      },
+      "logo": "https://a.lmska.com/storage/logos/courses/2/logo.png",
+      "logo_type": "png",
+      "subway_station": null,
+      "location_name": null,
+      "created_at": "2021-12-31T11:11:57.000000Z",
+      "updated_at": "2022-04-05T07:32:06.000000Z",
+      "fill_step": {
+        "id": 1,
+        "main_setting_step": 1,
+        "ticket_schema_step": 1,
+        "mail_test_step": 0,
+        "register_form_step": 1,
+        "site_course_step": 1,
+        "payment_method_step": 1,
+        "course_id": 2,
+        "created_at": "2021-12-31T11:11:58.000000Z",
+        "updated_at": "2022-04-07T15:19:13.000000Z",
+        "promo_codes_step": 0,
+        "streaming_links_step": 0
+      },
+      "statistics": [],
+      "finances": [],
+      "stream_schemas": [],
+      "fee": ""
+    }
+  }
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li></ul></div></div></div></div></body></html>
