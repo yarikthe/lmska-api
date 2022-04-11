@@ -1979,3 +1979,26 @@ uses:
                       category: Блок 1
                 lecturer_of_lessons:
                   data: []
+/forgotPassword:
+  displayName: Restore password
+  description: Restore user profile password in LMSka
+  post:
+    is: [ assets.paging]
+    description: Restore user profile password in LMSka
+    queryParameters: 
+      email:
+        type: string
+        description: Email address
+        example: V@rte.im
+      is_staff:
+        type: bool
+        description: Phone number
+        example: false
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data: "TODO: insert result (now error)"
