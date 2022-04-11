@@ -1984,3 +1984,41 @@ uses:
                       category: Блок 1
                 lecturer_of_lessons:
                   data: []
+/attachments:
+  displayName: Update Avatar
+  description: Update user avatar in LMSka  
+  post:
+    is: [ assets.paging]
+    description: Update user avatar in LMSka 
+    queryParameters:
+      file:
+        type: string
+        description: File avatar
+        required: true
+        example: newAvatar.png  
+      user:
+        type: bool
+        description: Set true if user
+        required: true
+        example: true   
+      user_logo:
+        type: bool
+        description: Set true if avatar
+        required: true
+        example: true     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                path: users/45/ava123.jpeg
+                file_name: ava123
+                file_size: 10662
+                extension: jpeg
+                attachment_type_id: 1
+                user_id: 45
+                updated_at: '2022-04-11T16:10:40.000000Z'
+                created_at: '2022-04-11T16:10:40.000000Z'
+                id: 138
