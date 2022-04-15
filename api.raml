@@ -2022,3 +2022,42 @@ uses:
                 updated_at: '2022-04-11T16:10:40.000000Z'
                 created_at: '2022-04-11T16:10:40.000000Z'
                 id: 138
+/courses/{id}/rates:
+  displayName: Rates of Course
+  description: Get Rates of Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Get Rates of Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 1
+                  rate: 4.15
+                  additional_text: woah
+                  user:
+                    id: 4
+                    email: d@rte.im
+                    role_id: 1
+                    avatar: https://a.lmska.com/storage/users/4/Без названия.png
+                    first_name: Никита
+                    last_name: Депп
+                  created_at: '2022-04-13T13:10:08.000000Z'
+                - id: 2
+                  rate: 5
+                  additional_text: |-
+                    Очень классный курс. Однозначно рекомендую всем кто хочет что-то изучить :)
+
+                    **Большое спасибо** автору за проделанную работу.
+                  user:
+                    id: 25
+                    email: john@test.lms
+                    role_id: 5
+                    avatar: https://a.lmska.com/storage/users/25/300_8.jpg
+                    first_name: John
+                    last_name: Smith
+                  created_at: '2022-04-13T15:43:00.000000Z'
