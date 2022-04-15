@@ -2110,3 +2110,67 @@ uses:
                         first_name: Степан
                         last_name:
                         avatar: https://a.lmska.com/storage/default.png
+/courses/{course_id}/lessons/{lesson_id}/homeworks:
+  displayName: Homework Lesson of Course
+  description: Homework Lesson of Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Homework Lesson of Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 38
+                  title: Homework 15
+                  type_id: 4
+                  lesson:
+                    id: 15
+                    title: HTML теги форматирования текста
+                    course:
+                      id: 2
+                      title: Тестовый курс
+                      logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                    category:
+                      id: 15
+                      category: Секция 2
+                      course_id: 2
+                  position: 1
+                  start_time: '2022-04-09 12:07:18'
+                  end_time: '2021-12-31 00:00:00'
+                  body: "<p>Что такое редактор кода и на сколько важны все эти инструменты при разрабокте?</p>"
+                  passed: 0
+                  mark: 0
+                  keys: '[{"value": "Первая часть вопроса"}, {"value": "Вторая часть вопроса"}]'
+                  passes: []
+                - id: 76
+                  title: Homework 15
+                  type_id: 3
+                  lesson:
+                    id: 15
+                    title: HTML теги форматирования текста
+                    course:
+                      id: 2
+                      title: Тестовый курс
+                      logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                    category:
+                      id: 15
+                      category: Секция 2
+                      course_id: 2
+                  position: 1
+                  start_time: '2022-04-14 17:14:21'
+                  end_time: '2030-12-31 00:00:00'
+                  body: ''
+                  passed: 1
+                  mark: 4
+                  keys: "{}"
+                  passes:
+                  - id: 24
+                    homework_id: 76
+                    user_id: 45
+                    passed_at: '2022-04-14 17:14:49'
+                    mark: 4
+                    file_path:
