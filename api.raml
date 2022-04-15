@@ -2061,3 +2061,52 @@ uses:
                     first_name: John
                     last_name: Smith
                   created_at: '2022-04-13T15:43:00.000000Z'
+/courses/{course_id}/lessons/{lesson_id}/comments:
+  displayName: Comments Lesson of Course
+  description: Comments Lesson of Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Comments Lesson of Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 3
+                  comment_text: Привет Люба
+                  created_at: '2022-03-18T13:29:03.000000Z'
+                  updated_at: '2022-03-18T13:29:03.000000Z'
+                  user:
+                    id: 31
+                    email: lubashka_l@bigmir.net
+                    role_id: 5
+                    first_name: Степан
+                    last_name:
+                    avatar: https://a.lmska.com/storage/default.png
+                  childs:
+                  - id: 14
+                    comment_text: Не трогай Любу !
+                    created_at: '2022-04-07T10:35:09.000000Z'
+                    updated_at: '2022-04-07T10:35:09.000000Z'
+                    user:
+                      id: 45
+                      email: jd@mail.com
+                      role_id: 5
+                      first_name: Jenny
+                      last_name: Doe
+                      avatar: https://a.lmska.com/storage/users/45/image_picker_B99AC0F1-741D-46E7-BFB7-7D6669B56359-34233-0000137A11028F21.jpg
+                    parent:
+                      id: 3
+                      comment_text: Привет Люба
+                      created_at: '2022-03-18T13:29:03.000000Z'
+                      updated_at: '2022-03-18T13:29:03.000000Z'
+                      user:
+                        id: 31
+                        email: lubashka_l@bigmir.net
+                        role_id: 5
+                        first_name: Степан
+                        last_name:
+                        avatar: https://a.lmska.com/storage/default.png
