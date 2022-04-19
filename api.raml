@@ -2,7 +2,7 @@
 title: LMSka API
 version: 1.0
 baseUri: https://a.lmska.com/api
-description: © 2022. LMSka - Learning Managment System by Axonax
+description: © 2022. LMSka - Learning Managment System. Developer: Axonax, LLC.
 
 uses:
   assets: assets.lib.raml
@@ -2174,3 +2174,348 @@ uses:
                     passed_at: '2022-04-14 17:14:49'
                     mark: 4
                     file_path:
+/courses/{course_id}:
+  displayName: Single Course
+  description: Single Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Single Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 2
+                title: Тестовый курс
+                description: "<p>Описание для тестового курса</p>"
+                address: online
+                address_lat:
+                address_lng:
+                registration_start: '2021-12-31 13:11:00'
+                registration_end: '2025-12-31 13:11:00'
+                course_start: '2021-12-31 13:11:00'
+                course_end: '2025-12-31 13:11:00'
+                owner:
+                  id: 3
+                  first_name: Андрей
+                  last_name: Голуб
+                  avatar: https://a.lmska.com/storage/users/3/magnar.jpeg
+                  telephone_code: '380'
+                  telephone_number: '676654620'
+                  company:
+                  email: a@rte.im
+                  role:
+                    id: 1
+                    name: Administrator
+                    role: admin
+                setting:
+                  status:
+                    id: 2
+                    name: Active
+                    status: active
+                  category:
+                    id: 1
+                    name: Conference
+                    category: conference
+                  subject:
+                    id: 1
+                    name: Informational technologies
+                    subject: information_technologies
+                  recount_currency:
+                  payment_currency:
+                    id: 1
+                    name: Ukrainian Hryvnia
+                    currency: hryvnia
+                    iso_code: uah
+                  check_in:
+                  language:
+                    id: 2
+                    name: Ukrainian
+                    language: ukrainian
+                    iso_code: ua
+                  country:
+                    id: 1
+                    name: Ukraine
+                    country: ukraine
+                    iso_code: ua
+                    languages:
+                    - id: 2
+                      name: Ukrainian
+                      language: ukrainian
+                      iso_code: ua
+                    - id: 3
+                      name: Russian
+                      language: russian
+                      iso_code: ru
+                    - id: 6
+                      name: Hungarian
+                      language: hungarian
+                      iso_code: hu
+                    - id: 7
+                      name: Romanian
+                      language: romanian
+                      iso_code: ro
+                    currencies:
+                    - id: 1
+                      name: Ukrainian Hryvnia
+                      currency: hryvnia
+                      iso_code: uah
+                    - id: 4
+                      name: Russian Ruble
+                      currency: ruble
+                      iso_code: rub
+                  fix_commission: '0.000'
+                  percent_commission: '0.00'
+                  self_system_commission_included_payment: true
+                  payment_system_commission_included_payment: true
+                  payment_activated: true
+                  ticket_description_top:
+                  ticket_description_bottom:
+                  contact_email:
+                  is_contact_email_verified: 0
+                  contact_phone:
+                  contact_name:
+                  offer_text:
+                  affiliate_text:
+                  registration_first_step_text: |2-
+
+                        <p>EN:</p>
+                    <p>When registering for the Тестовый курс course, you (or someone else) specified this email as a contact email. An account has been created for you at <a href="https://c.rte.im">https://c.rte.im</a>
+                    You can see your orders and change ticket data in your account on your own</p>
+                    <br/>
+                    <p>УК:</p>
+                    <p>При реєстрації на подію Тестовый курс ви (або хтось інший) вказали цей email як контактний. Вам був створений кабінет за адресою <a href="https://c.rte.im">https://c.rte.im</a>
+                    Ви можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно</p>
+                    <br/>
+                    <p>РУ:</p>
+                    <p>При регистрации на событие Тестовый курс вы ( или кто то другой) указали этот email как контактный. Вам был создан кабинет по адресу
+                    <a href="https://c.rte.im">https://c.rte.im</a>
+                    Вы можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно</p>
+                  ticket_with_text:
+                  online_text:
+                  course_url:
+                  fb_link_group:
+                  available_duplicate_contacts: 0
+                  use_ticket_schema_emails: 0
+                  lesson_schema_graph: "[]"
+                  use_lesson_schema_graph: 0
+                logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                logo_type: png
+                subway_station:
+                location_name:
+                created_at: '2021-12-31T11:11:57.000000Z'
+                updated_at: '2022-04-18T22:13:02.000000Z'
+                fill_step:
+                  id: 1
+                  main_setting_step: 1
+                  ticket_schema_step: 1
+                  mail_test_step: 0
+                  register_form_step: 1
+                  site_course_step: 1
+                  payment_method_step: 1
+                  course_id: 2
+                  created_at: '2021-12-31T11:11:58.000000Z'
+                  updated_at: '2022-04-18T14:45:37.000000Z'
+                  promo_codes_step: 0
+                  streaming_links_step: 0
+                statistics:
+                  visitors: '78'
+                  unique_visitors: 10
+                  registrations: 18
+                  registration_attempts: '8'
+                  paid_orders: '10'
+                  total: '42.000'
+                finances:
+                  general_data:
+                    paid_orders: '10'
+                    amount: 54
+                    rte_fee: 0
+                    market_fee: 0
+                    organizer_amount: 54
+                    withdraw_amount: 54
+                  payment_method_data:
+                    wayforpay:
+                      amount: 0
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 0
+                      withdraw_amount: 0
+                    liqpay:
+                      amount: 0
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 0
+                      withdraw_amount: 0
+                    fondy:
+                      amount: 0
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 0
+                      withdraw_amount: 0
+                    non-cash:
+                      amount: 0
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 0
+                      withdraw_amount: 0
+                    cash:
+                      amount: 0
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 0
+                      withdraw_amount: 0
+                    paypal:
+                      amount: 0
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 0
+                      withdraw_amount: 0
+                    stripe:
+                      amount: 54
+                      rte_fee: 0
+                      market_fee: 0
+                      organizer_amount: 54
+                      withdraw_amount: 54
+                  withdrawRequests:
+                    data: []
+                domain:
+                  id: 10
+                  domain_name: wonders
+                  settings: '[{"id": "block57913074", "code": "ME01", "name": {"en": "Menu with logo
+                    on the left", "ru": "Меню с логотипом слева", "uk": "Меню з логотипом зліва"},
+                    "hidden": false, "styles": {"general": {"color": "#ffffff", "padding-top": "30px",
+                    "padding-left": "30px", "padding-right": "30px", "padding-bottom": "30px", "background-color":
+                    "#000000"}}, "content": {"logo": null, "links": [{"url": null, "text": "Ссылка
+                    1", "blank": false}, {"url": "#block43019079", "text": "Ссылка 2", "blank": false},
+                    {"url": null, "text": "Ссылка 3", "blank": false}], "logo_text": "Company"}, "preview":
+                    "https://a.lmska.com/storage/landing/previews/ME01.png", "fullWidth": true, "parent_code":
+                    "ME"}, {"id": "block91838744", "code": "IN01", "name": {"en": "Cover: title and
+                    description", "ru": "Обложка: заголовок и описание", "uk": "Обкладинка: заголовок
+                    та опис"}, "hidden": false, "styles": {"button1": {"color": "#000000", "padding-top":
+                    "15px", "border-color": "#ffffff", "border-width": "2px", "padding-left": "40px",
+                    "border-radius": "30px", "padding-right": "40px", "padding-bottom": "15px", "background-color":
+                    "#ffffff"}, "button2": {"color": "#ffffff", "padding-top": "15px", "border-color":
+                    "#ffffff", "border-width": "2px", "padding-left": "40px", "border-radius": "30px",
+                    "padding-right": "40px", "padding-bottom": "15px", "background-color": "transparent"},
+                    "general": {"color": "#ffffff", "height": "80vh", "background-color": "#333333"}},
+                    "content": {"title": "<h2>WONDERS</h2>", "button1": {"url": null, "text": "Some
+                    action", "blank": false}, "button2": {"url": null, "text": null, "blank": false},
+                    "description": "<p>We organize dream holidays to breathtaking places all over
+                    the world. Choose one of our special destinations or suggest yours</p>", "backgroundImage":
+                    "https://a.lmska.com/storage/landing/IN01-BG.jpg"}, "preview": "https://a.lmska.com/storage/landing/previews/IN01.png",
+                    "fullWidth": true, "parent_code": "IN"}, {"id": "block48020470", "code": "LS01",
+                    "name": {"en": "Dynamic preview of lessons", "ru": "Динамическое превью уроков",
+                    "uk": "Динамічне превью уроків"}, "hidden": false, "styles": {"general": {"padding-top":
+                    "50px", "padding-bottom": "50px"}}, "content": {"text": "<p class=\"ql-align-center\">You
+                    can see the list of lessons in this course</p>", "title": "<h2 class=\"ql-align-center\">Course
+                    lessons</h2>"}, "preview": "https://a.lmska.com/storage/landing/previews/LS01.png",
+                    "fullWidth": false, "parent_code": "LS"}, {"id": "block64278814", "code": "TL01",
+                    "name": {"en": "Title", "ru": "Заголовок", "uk": "Заголовок"}, "hidden": false,
+                    "styles": {"general": {"color": "#000000", "padding-top": "50px", "padding-bottom":
+                    "50px", "background-color": "#ffffff"}}, "content": {"text": "<p class=\"ql-align-center\">A
+                    headline''s purpose is to quickly and briefly draw attention to the story. It
+                    is generally written by a copy editor, but may also be written by the writer,
+                    the page layout designer, or other editors.</p>", "title": "<h2 class=\"ql-align-center\"><strong>How
+                    to write headlines that actually work?</strong></h2>", "author": "<p class=\"ql-align-center\"><strong>MAUREEN
+                    ZEHRING</strong></p>"}, "preview": "https://a.lmska.com/storage/landing/previews/TL01.png",
+                    "fullWidth": false, "parent_code": "TL"}, {"id": "block81050457", "code": "TX01",
+                    "name": {"en": "Text block", "ru": "Текстовый блок", "uk": "Текстовий блок"},
+                    "hidden": false, "styles": {"general": {"color": "#000000", "padding-top": "50px",
+                    "padding-bottom": "50px", "background-color": "#ffffff"}}, "content": {"text":
+                    "<p>Book design is the art of incorporating the content, style, format, design,
+                    and sequence of the various components of a book into a coherent whole. In the
+                    words of Jan Tschichold, \"methods and rules upon which it is impossible to improve,
+                    have been developed over centuries. To produce perfect books, these rules have
+                    to be brought back to life and applied.\"</p><p>Front matter, or preliminaries,
+                    is the first section of a book and is usually the smallest section in terms of
+                    the number of pages. Each page is counted, but no folio or page number is expressed
+                    or printed, on either display pages or blank pages.</p>"}, "preview": "https://a.lmska.com/storage/landing/previews/TX01.png",
+                    "fullWidth": false, "parent_code": "TX"}, {"id": "block04114078", "code": "IM01",
+                    "name": {"en": "Image", "ru": "Изображение", "uk": "Зображення"}, "hidden": false,
+                    "styles": {"general": {"color": "#000000", "padding-top": "50px", "padding-bottom":
+                    "50px", "background-color": "#ffffff"}}, "content": {"path": "https://a.lmska.com/storage/landing/IM01-D.jpg"},
+                    "preview": "https://a.lmska.com/storage/landing/previews/IM01.png", "fullWidth":
+                    false, "parent_code": "IM"}, {"id": "block68575480", "code": "VD01", "name": {"en":
+                    "Video from YouTube", "ru": "Видео с YouTube", "uk": "Відео с YouTube"}, "hidden":
+                    false, "styles": {"general": {"color": "#000000", "padding-top": "50px", "padding-bottom":
+                    "50px", "background-color": "#ffffff"}}, "content": {"path": "_5c-VsmwAew"}, "preview":
+                    "https://a.lmska.com/storage/landing/previews/VD01.png", "fullWidth": false, "parent_code":
+                    "VD"}, {"id": "block53172482", "code": "LT01", "name": {"en": "Lecturers: square
+                    image and information", "ru": "Лекторы: квадратное изображение и информация",
+                    "uk": "Лектори: квадратне зображення та інформація"}, "hidden": false, "styles":
+                    {"row": {"justify-content": "center"}, "general": {"color": "#000000", "padding-top":
+                    "50px", "padding-bottom": "50px", "background-color": "#ffffff"}}, "content":
+                    {"text": "<p class=\"ql-align-center\">The smartest people work every day to provide
+                    the<br> best service and make our clients happy</p>", "title": "<h2 class=\"ql-align-center\">Who
+                    We Are</h2>", "lectors": [{"id": 2, "hide": false, "name": "<p><strong>Eva Stark</strong></p>",
+                    "photo": "https://a.lmska.com/storage/landing/lectors/2.png", "position": "<p><span
+                    style=\"color:rgb(126,126,126)\">Customer Support</span></p>", "file_name": "2.png"},
+                    {"id": 3, "hide": false, "name": "<p><strong>Julia Bush</strong></p>", "photo":
+                    "https://a.lmska.com/storage/landing/lectors/3.png", "position": "<p><span style=\"color:rgb(126,126,126)\">Design
+                    Director</span></p>", "file_name": "3.png"}, {"id": 4, "hide": false, "name":
+                    "<p><strong>Carlos Lott</strong></p>", "photo": "https://a.lmska.com/storage/landing/lectors/4.png",
+                    "position": "<p><span style=\"color:rgb(126,126,126)\">Marketing Director</span></p>",
+                    "file_name": "4.png"}]}, "preview": "https://a.lmska.com/storage/landing/previews/LT01.png",
+                    "fullWidth": false, "parent_code": "LT"}, {"id": "block46509143", "code": "FR03",
+                    "name": {"en": "Form for website", "ru": "Форма для веб-сайта", "uk": "Форма для
+                    веб-сайту"}, "hidden": false, "styles": {"general": {"color": "#000000", "background-color":
+                    "#ffffff"}}, "content": [], "preview": "https://a.lmska.com/storage/landing/previews/FR03.png",
+                    "fullWidth": true, "parent_code": "FR"}, {"id": "block63816299", "code": "PN01",
+                    "name": {"en": "Logos in columns", "ru": "Логотипы в колонках", "uk": "Логотипи
+                    в колонках"}, "hidden": false, "styles": {"general": {"color": "#000000", "padding-top":
+                    "50px", "padding-bottom": "50px", "background-color": "#ffffff"}}, "content":
+                    {"text": "<p class=\"ql-align-center\">If you are interested in becoming a partner
+                    or sponsor,<br> please feel free to contact us.</p>", "title": "<h2 class=\"ql-align-center\">Our
+                    Partners</h2>", "partners": [{"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/1.jpg",
+                    "blank": false, "file_name": "1.jpg"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/2.jpg",
+                    "blank": false, "file_name": "2.jpg"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/3.png",
+                    "blank": false, "file_name": "3.png"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/4.png",
+                    "blank": false, "file_name": "4.png"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/5.jpg",
+                    "blank": false, "file_name": "5.jpg"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/6.jpg",
+                    "blank": false, "file_name": "6.jpg"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/7.jpg",
+                    "blank": false, "file_name": "7.jpg"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/8.png",
+                    "blank": false, "file_name": "8.png"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/9.jpg",
+                    "blank": false, "file_name": "9.jpg"}, {"url": "#", "hide": false, "path": "https://a.lmska.com/storage/landing/partners/10.png",
+                    "blank": false, "file_name": "10.png"}]}, "preview": "https://a.lmska.com/storage/landing/previews/PN01.png",
+                    "fullWidth": false, "parent_code": "PN"}, {"id": "block47140164", "code": "CT01",
+                    "name": {"en": "Contacts and card in two columns", "ru": "Контакты и карта в две
+                    колонки", "uk": "Контакти і карта в дві колонки"}, "hidden": false, "styles":
+                    {"general": {"color": "#000000", "padding-top": "50px", "padding-bottom": "50px",
+                    "background-color": "#ffffff"}}, "content": {"mapX": "50.112687699051335", "mapY":
+                    "30.625272490039933", "text": "<p>+38 (067) 66-54-620</p><p>hello@mail.com</p><p>Left
+                    Pineapple, 22 Pink Street, Kiev</p>", "title": "<h2>Contact us</h2>", "social":
+                    [{"id": 1, "url": "https://facebook.com", "icon": "fab fa-facebook-f", "name":
+                    "Facebook"}, {"id": 2, "url": "https://twitter.com", "icon": "fab fa-twitter",
+                    "name": "Twitter"}, {"id": 3, "url": "https://instagram.com", "icon": "fab fa-instagram",
+                    "name": "Instagram"}, {"id": 4, "url": null, "icon": "fab fa-linkedin", "name":
+                    "Linkedin"}, {"id": 5, "url": null, "icon": "fab fa-telegram", "name": "Telegram"},
+                    {"id": 6, "url": null, "icon": "fab fa-youtube", "name": "Youtube"}, {"id": 7,
+                    "url": null, "icon": "fab fa-vimeo", "name": "Vimeo"}, {"id": 8, "url": null,
+                    "icon": "fab fa-pinterest", "name": "Pinterest"}]}, "preview": "https://a.lmska.com/storage/landing/previews/CT01.png",
+                    "fullWidth": true, "parent_code": "CT"}, {"id": "block24116864", "code": "FT01",
+                    "name": {"en": "Logo and text in the center", "ru": "Лого и текст по центру",
+                    "uk": "Лого і текст по центру"}, "hidden": false, "styles": {"general": {"color":
+                    "#ffffff", "padding-top": "50px", "padding-bottom": "50px", "background-color":
+                    "#000000"}}, "content": {"logo": "https://a.lmska.com/storage/landing/FT01-P.svg",
+                    "text": "<p class=\"ql-align-center\">© All Rights Reserved.<br><a href=\"mailto:hello@mysite.com\">hello@mysite.com</a></p>"},
+                    "preview": "https://a.lmska.com/storage/landing/previews/FT01.png", "fullWidth":
+                    true, "parent_code": "FT"}]'
+                  created_at: '2022-03-28T09:19:37.000000Z'
+                  updated_at: '2022-04-13T10:25:05.000000Z'
+                  course_id: 2
+                  seo: '{"gtm": null, "title": "WONDERS", "favicon": "https://a.lmska.com/storage/materials/2/favicon-16x16.png",
+                    "keywords": "wonders,huendrrs", "description": "privet"}'
+                  href: wonders.
+                web_hooks: []
+                schema:
+                stream_schemas: []
+                homework_count: 7
+                test_count: 3
+                test_questions_amount: 11
+                rates:
+                  average_rate: 4.58
+                  count: 2
+                  rate_weight: '{"5":50,"4":50,"3":0,"2":0,"1":0}'
+                user_info: 13
