@@ -2836,3 +2836,43 @@ uses:
                     created_at: '2022-04-11T10:35:18.000000Z'
                     updated_at: '2022-04-11T10:35:18.000000Z'
                     deleted_at:
+/courses/categories:
+  displayName: Categories of Course
+  description: Categories of Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Categories of Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                - id: 1
+                  name: Conference
+                  category: conference
+                - id: 2
+                  name: Seminar
+                  category: seminar
+                - id: 3
+                  name: Exhibition
+                  category: exhibition
+                - id: 4
+                  name: Festival
+                  category: festival
+                - id: 5
+                  name: Summit
+                  category: summit
+                - id: 6
+                  name: Forum
+                  category: forum
+                - id: 7
+                  name: Lecture
+                  category: lecture
+                - id: 8
+                  name: Courses
+                  category: courses
+                - id: 9
+                  name: Presentation
+                  category: presentation
