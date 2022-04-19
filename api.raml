@@ -2519,3 +2519,29 @@ uses:
                   count: 2
                   rate_weight: '{"5":50,"4":50,"3":0,"2":0,"1":0}'
                 user_info: 13
+/tests:
+  displayName: Tests of Course
+  description: Tests of Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: SiTests of Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 1,
+                creator_id: 3,
+                deleted_at: null,
+                created_at: "2022-01-19T09:03:04.000000Z",
+                updated_at: "2022-01-19T09:03:04.000000Z",
+                lesson_id: 1,
+                course_id: null,
+                homework_id: 1,
+                start_time: null,
+                end_time: null,
+                total_score: 1,
+                visible: 1,
+                shuffle: 0
