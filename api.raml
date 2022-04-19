@@ -2524,7 +2524,7 @@ uses:
   description: Tests of Course in LMSka  
   get:
     is: [ assets.paging]
-    description: SiTests of Course in LMSka     
+    description: Tests of Course in LMSka     
     responses:
       200:
         body:
@@ -2545,3 +2545,294 @@ uses:
                 total_score: 1
                 visible: 1
                 shuffle: 0
+/tests/{id}:
+  displayName: Single Tests of Course
+  description: Single Tests of Course in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Single Tests of Course in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 9
+                creator_id: 3
+                deleted_at:
+                created_at: '2022-01-31T10:56:49.000000Z'
+                updated_at: '2022-01-31T10:56:49.000000Z'
+                lesson_id: 14
+                course_id:
+                homework_id: 4
+                start_time:
+                end_time:
+                total_score: 0
+                visible: 1
+                shuffle: 0
+                questions:
+                - id: 7
+                  test_id: 9
+                  question_text: Откуда ты?
+                  created_at: '2022-01-31T10:56:49.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 5
+                  answers:
+                  - id: 19
+                    question_id: 7
+                    answer_text: Франция
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 20
+                    question_id: 7
+                    answer_text: Сомали
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 21
+                    question_id: 7
+                    answer_text: Куба
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 22
+                    question_id: 7
+                    answer_text: Украина
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                - id: 8
+                  test_id: 9
+                  question_text: Как тебя зовут?
+                  created_at: '2022-01-31T10:56:49.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 6
+                  answers:
+                  - id: 23
+                    question_id: 8
+                    answer_text: Петро
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 24
+                    question_id: 8
+                    answer_text: Света
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 25
+                    question_id: 8
+                    answer_text: Андрей
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 26
+                    question_id: 8
+                    answer_text: Виталик
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-01-31T10:56:49.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                - id: 46
+                  test_id: 9
+                  question_text: Что такое CSS?
+                  created_at: '2022-04-07T12:45:15.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 1
+                  answers:
+                  - id: 117
+                    question_id: 46
+                    answer_text: Стилизация разметки
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 118
+                    question_id: 46
+                    answer_text: Синоним гиперинфляции
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 119
+                    question_id: 46
+                    answer_text: Это 3 буквы
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 120
+                    question_id: 46
+                    answer_text: Террористическая организация
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                - id: 47
+                  test_id: 9
+                  question_text: Что такое HTML?
+                  created_at: '2022-04-07T12:45:15.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 2
+                  answers:
+                  - id: 121
+                    question_id: 47
+                    answer_text: Вид памперсов
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 122
+                    question_id: 47
+                    answer_text: Язык разметки
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 123
+                    question_id: 47
+                    answer_text: Так зовут моего сына
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 124
+                    question_id: 47
+                    answer_text: Язык програмирования
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                - id: 48
+                  test_id: 9
+                  question_text: Существует ли магия на свете?
+                  created_at: '2022-04-07T12:45:15.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 3
+                  answers:
+                  - id: 125
+                    question_id: 48
+                    answer_text: Да, конечно
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 126
+                    question_id: 48
+                    answer_text: Нет, бред
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                - id: 49
+                  test_id: 9
+                  question_text: Как скоро закончится война?
+                  created_at: '2022-04-07T12:45:15.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 4
+                  answers:
+                  - id: 127
+                    question_id: 49
+                    answer_text: Через год
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 128
+                    question_id: 49
+                    answer_text: Через две недели
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 129
+                    question_id: 49
+                    answer_text: Через месяц
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 130
+                    question_id: 49
+                    answer_text: Через 3 месяца
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-07T12:45:15.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                - id: 50
+                  test_id: 9
+                  question_text: Какой религии придерживается Никита?
+                  created_at: '2022-04-11T10:35:18.000000Z'
+                  updated_at: '2022-04-11T10:35:18.000000Z'
+                  deleted_at:
+                  position: 0
+                  answers:
+                  - id: 131
+                    question_id: 50
+                    answer_text: Иудаизм
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-11T10:35:18.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 132
+                    question_id: 50
+                    answer_text: Буддизм
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-11T10:35:18.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 133
+                    question_id: 50
+                    answer_text: Мусульманство
+                    is_correct: 0
+                    right_answer_score: 1
+                    created_at: '2022-04-11T10:35:18.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
+                  - id: 134
+                    question_id: 50
+                    answer_text: Атеист
+                    is_correct: 1
+                    right_answer_score: 1
+                    created_at: '2022-04-11T10:35:18.000000Z'
+                    updated_at: '2022-04-11T10:35:18.000000Z'
+                    deleted_at:
