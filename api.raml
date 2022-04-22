@@ -2137,13 +2137,16 @@ uses:
                         role_id: 5
                         first_name: Степан
                         last_name:
-                        avatar: https://a.lmska.com/storage/default.png
-/courses/{course_id}/lessons/{lesson_id}/comments/{comment_id}:
-  displayName: Remove Comment Lesson of Course
-  description: Remove Comment Lesson of Course in LMSka  
+                        avatar: https://a.lmska.com/storage/default.png 
   delete:
     is: [ assets.paging]
-    description: Remove Comment about Lesson of Course in LMSka  
+    description: Remove Comment about Lesson of Course in LMSka
+    queryParameters:
+      comment_id:
+        type: int
+        description: Comment ID
+        required: true
+        example: 20
     responses:
       200:
         body:
