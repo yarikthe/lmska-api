@@ -2138,6 +2138,20 @@ uses:
                         first_name: Степан
                         last_name:
                         avatar: https://a.lmska.com/storage/default.png
+/courses/{course_id}/lessons/{lesson_id}/comments/{comment_id}:
+  displayName: Remove Comment Lesson of Course
+  description: Remove Comment Lesson of Course in LMSka  
+  delete:
+    is: [ assets.paging]
+    description: Remove Comment about Lesson of Course in LMSka  
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                status: success
 /courses/{course_id}/lessons/{lesson_id}/homeworks:
   displayName: Homework Lesson of Course
   description: Homework Lesson of Course in LMSka  
