@@ -2064,6 +2064,34 @@ uses:
 /courses/{course_id}/lessons/{lesson_id}/comments:
   displayName: Comments Lesson of Course
   description: Comments Lesson of Course in LMSka  
+  post:
+    is: [ assets.paging]
+    description: Add Comments about Lesson of Course in LMSka  
+    queryParameters:
+      comment_text:
+        type: string
+        description: User comment
+        required: true
+        example: Nice lesson
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 19
+                comment_text: 'Nice lesson'
+                created_at: '2022-04-22T11:19:18.000000Z'
+                updated_at: '2022-04-22T11:19:18.000000Z'
+                user:
+                  id: 45
+                  email: jd@mail.com
+                  role_id: 5
+                  first_name: Jenny
+                  last_name: Doe
+                  avatar: https://a.lmska.com/storage/users/45/image_picker_B99AC0F1-741D-46E7-BFB7-7D6669B56359-34233-0000137A11028F21.jpg
+                childs: []
   get:
     is: [ assets.paging]
     description: Comments Lesson of Course in LMSka     
