@@ -2101,6 +2101,11 @@ uses:
         description: Edit user comment
         required: true
         example: Edit Nice lesson
+      comment_id:
+        type: int
+        description: Comment ID
+        required: true
+        example: /courses/2/lessons/17/comments/{comment_id}
     responses:
       200:
         body:
