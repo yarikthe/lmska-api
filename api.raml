@@ -2061,6 +2061,38 @@ uses:
                     first_name: John
                     last_name: Smith
                   created_at: '2022-04-13T15:43:00.000000Z'
+  post:
+    is: [ assets.paging]
+    description: Add Review of Course in LMSka  
+    queryParameters:
+      additional_text:
+        type: string
+        description: User comment
+        required: true
+        example: Nice lesson
+      rate:
+        type: double
+        description: Rate from 0.1 to 5.0
+        required: true
+        example: 4.9
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 19
+                additional_text: 'Nice lesson'
+                created_at: '2022-04-22T11:19:18.000000Z'
+                rate: 4.9
+                user:
+                  id: 45
+                  email: jd@mail.com
+                  role_id: 5
+                  first_name: Jenny
+                  last_name: Doe
+                  avatar: https://a.lmska.com/storage/users/45/image_picker_B99AC0F1-741D-46E7-BFB7-7D6669B56359-34233-0000137A11028F21.jpg
 /courses/{course_id}/lessons/{lesson_id}/comments:
   displayName: Comments Lesson of Course
   description: Comments Lesson of Course in LMSka  
