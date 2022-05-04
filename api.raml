@@ -3146,3 +3146,58 @@ uses:
                 created_at: '2022-04-19T12:27:16.000000Z'
                 updated_at: '2022-04-21T14:34:22.000000Z'
                 tries_allowed: 1
+/users/chats/{chat_id}:
+  displayName: User Chat
+  description: Get User Chat in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Get User Chat in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                - id: 10
+                  sender_id: 45
+                  chat_id: 2
+                  message: test
+                  viewed: 0
+                  created_at: '2022-04-14T14:57:41.000000Z'
+                  updated_at: '2022-04-14T14:57:41.000000Z'
+                - id: 6
+                  sender_id: 45
+                  chat_id: 2
+                  message: hello
+                  viewed: 0
+                  created_at: '2022-04-08T12:26:34.000000Z'
+                  updated_at: '2022-04-08T12:26:34.000000Z'
+                - id: 5
+                  sender_id: 29
+                  chat_id: 2
+                  message: нічосі! працює....
+                  viewed: 0
+                  created_at: '2022-04-01T11:36:21.000000Z'
+                  updated_at: '2022-04-01T11:36:21.000000Z'
+                - id: 4
+                  sender_id: 45
+                  chat_id: 2
+                  message: Та у вас і з другого - третього не завжди працює (((
+                  viewed: 0
+                  created_at: '2022-04-01T11:31:08.000000Z'
+                  updated_at: '2022-04-01T11:31:08.000000Z'
+                - id: 3
+                  sender_id: 29
+                  chat_id: 2
+                  message: Які тести? Ви про що? Коли це в нас щось працювало з першого разу?
+                  viewed: 0
+                  created_at: '2022-03-31T13:33:26.000000Z'
+                  updated_at: '2022-03-31T13:33:26.000000Z'
+                - id: 2
+                  sender_id: 45
+                  chat_id: 2
+                  message: Де тести?
+                  viewed: 0
+                  created_at: '2022-03-31T12:18:24.000000Z'
+                  updated_at: '2022-03-31T12:18:24.000000Z'
