@@ -3201,3 +3201,29 @@ uses:
                   viewed: 0
                   created_at: '2022-03-31T12:18:24.000000Z'
                   updated_at: '2022-03-31T12:18:24.000000Z'
+/users/{chat_id}/chats/send:
+  displayName: Send Mesasge to Chat  
+  description: Send Mesasge to  Chat in LMSka  
+  post:
+    is: [ assets.paging]
+    description: Send Mesasge to Chat in LMSka   
+    queryParameters:
+      message:
+        type: string
+        description: Message text
+        required: true
+        example: Welcome    
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 2
+                sender_id: 45
+                chat_id: 2
+                message: Sample text
+                viewed: 0
+                created_at: '2022-03-31T12:18:24.000000Z'
+                updated_at: '2022-03-31T12:18:24.000000Z'
