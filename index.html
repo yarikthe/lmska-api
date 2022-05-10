@@ -4456,4 +4456,110 @@ pre code {
     "count": 2,
     "per_page": 15
   }
-}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li></ul></div></div></div></div></body></html>
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="courses_2_student_ref" class="panel-title">Referal Program of Course</h3></div><div class="panel-body"><div class="top-resource-description"><p>Referal Program of Course in LMSka</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_courses_2_student_ref"><span class="parent"></span>/courses/2/student-ref</a> <span class="methods"><a href="#courses_2_student_ref_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_courses_2_student_ref" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#courses_2_student_ref_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Referal Program of Course in LMSka</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="courses_2_student_ref_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/courses/2/student-ref</h4></div><div class="modal-body"><div class="alert alert-info"><p>Referal Program of Course in LMSka</p></div><ul class="nav nav-tabs"><li class="active"><a href="#courses_2_student_ref_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="courses_2_student_ref_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>[
+  {
+    "id": 4,
+    "course": {
+      "id": 2,
+      "title": "Тестовий курс",
+      "logo": "https://a.lmska.com/storage/logos/courses/2/logo.png",
+      "lessons": {
+        "data": [
+          {
+            "id": 14,
+            "title": "HTML теги (теория)"
+          },
+          {
+            "id": 15,
+            "title": "HTML теги форматирования текста"
+          },
+          {
+            "id": 16,
+            "title": "Создание скелета HTML документа"
+          },
+          {
+            "id": 17,
+            "title": "Установка редактора Brackets"
+          },
+          {
+            "id": 18,
+            "title": "Шестой урок"
+          },
+          {
+            "id": 19,
+            "title": "Седьмой урок"
+          },
+          {
+            "id": 20,
+            "title": "Восьмой урок"
+          },
+          {
+            "id": 106,
+            "title": "Введение"
+          },
+          {
+            "id": 171,
+            "title": "Урок Для Теста схем Standart Standart2"
+          }
+        ]
+      }
+    },
+    "user": {
+      "id": 45,
+      "first_name": "Двейн",
+      "last_name": "Джонсон",
+      "avatar": "https://a.lmska.com/storage/users/45/Screenshot 2022-05-04 at 19.05.07.png",
+      "telephone_code": "380",
+      "telephone_number": "980001234",
+      "telephone_full_number": "380980001234",
+      "email": "jd@mail.com",
+      "role": {
+        "id": 5,
+        "name": "Студент",
+        "role": "student"
+      },
+      "chats": {
+        "data": []
+      }
+    },
+    "link": "XEk06SKw7oweHf5g",
+    "percent": 5,
+    "redirects": [
+      {
+        "id": 2,
+        "setting": {
+          "id": 4,
+          "course_to_user_id": 68,
+          "link": "XEk06SKw7oweHf5g",
+          "created_at": "2022-05-04T16:22:19.000000Z",
+          "updated_at": "2022-05-04T16:22:19.000000Z"
+        },
+        "order": {
+          "id": 111,
+          "course_id": 2,
+          "creator_id": 186,
+          "status_id": 5,
+          "price": "5.000",
+          "rte_commission": "!$$$novalue",
+          "payment_system_commission": "!$$$novalue",
+          "discounted": 0,
+          "hash": 2449682,
+          "deleted_at": "!$$$novalue",
+          "created_at": "2022-05-04T16:28:33.000000Z",
+          "updated_at": "2022-05-04T16:34:01.000000Z",
+          "promo_code_id": "!$$$novalue",
+          "application_id": "!$$$novalue",
+          "outside_system_id": "!$$$novalue",
+          "agent_info": "{\"ip\": \"188.163.81.176\", \"os\": \"Postman\", \"browser\": \"unknown\", \"country\": \"Ukraine|UA\", \"screen_size\": {\"width\": 1536, \"height\": 864}}",
+          "restored_at": "2022-05-04T16:28:33.000000Z",
+          "user_hash": "!$$$novalue",
+          "reciever_commission": "!$$$novalue",
+          "blocked_until_pending_is_resolved": 0
+        },
+        "created_at": "2022-05-04T16:28:33.000000Z",
+        "earned": 0
+      }
+    ],
+    "created_at": "2022-05-04T16:22:19.000000Z"
+  }
+]</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses_2_student_ref">Referal Program of Course</a></li></ul></div></div></div></div></body></html>
