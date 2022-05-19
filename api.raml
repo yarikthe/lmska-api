@@ -4297,3 +4297,111 @@ uses:
                     created_at: '2022-05-04T16:28:33.000000Z'
                     earned: 0
                   created_at: '2022-05-04T16:22:19.000000Z'
+/ref:
+  displayName: Referal Program
+  description: Referal Program in LMSka  
+  get:
+    is: [ assets.paging]
+    description: Get Referal Program in LMSka     
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+              - id: 16
+                months: 1
+                percent: 50
+                link: ru9KpAZT0ezgMPBE
+                creator:
+                  id: 45
+                  first_name: Двейн
+                  last_name: Джонсон
+                  email: jd@mail.com
+                  active_status: 0
+                  dark_mode: 0
+                  messenger_color: "#2180f3"
+                  avatar: https://a.lmska.com/storage/users/45/скала2.jpeg
+                  company:
+                  telephone_code: '380'
+                  telephone_number: '980001234'
+                  verified: 1
+                  verification_token:
+                  reset_token: JDJ5JDEwJFV2N1MyUXhta2xtQjMyQnNnTmZrMnUvSDlxN0dnOGhwN1J0T01mOW5hU1dsYnIyZ0JLMVhl
+                  active: 1
+                  deleted_at:
+                  created_at: '2022-03-31T09:20:18.000000Z'
+                  updated_at: '2022-05-11T13:18:35.000000Z'
+                  role_id: 5
+                  mail_credit_balance: 0
+                  custom_fields:
+                  is_print_sticker: 1
+                  is_check_in: 1
+                  code:
+                  hash:
+                  why_rte: 0
+                  scan_mode: 0
+                  photo_manual: 0
+                  photo_auto: 0
+                  storage_capacity: 1055066183
+                  telephone_full_number: '380980001234'
+                redirects: []
+  post:
+    is: [ assets.paging]
+    description: Store Referal
+    queryParameters:
+      percent:
+        type: int
+        description: Percent 
+        required: true
+        example: 50
+      months:
+        type: int
+        description: Months
+        required: true
+        example: 2
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+              id: 16
+              months: 1
+              percent: 50
+              link: ru9KpAZT0ezgMPBE
+              creator:
+                id: 45
+                first_name: Двейн
+                last_name: Джонсон
+                email: jd@mail.com
+                active_status: 0
+                dark_mode: 0
+                messenger_color: "#2180f3"
+                avatar: https://a.lmska.com/storage/users/45/скала2.jpeg
+                company:
+                telephone_code: '380'
+                telephone_number: '980001234'
+                verified: 1
+                verification_token:
+                reset_token: JDJ5JDEwJFV2N1MyUXhta2xtQjMyQnNnTmZrMnUvSDlxN0dnOGhwN1J0T01mOW5hU1dsYnIyZ0JLMVhl
+                active: 1
+                deleted_at:
+                created_at: '2022-03-31T09:20:18.000000Z'
+                updated_at: '2022-05-11T13:18:35.000000Z'
+                role_id: 5
+                mail_credit_balance: 0
+                custom_fields:
+                is_print_sticker: 1
+                is_check_in: 1
+                code:
+                hash:
+                why_rte: 0
+                scan_mode: 0
+                photo_manual: 0
+                photo_auto: 0
+                storage_capacity: 1055066183
+                telephone_full_number: '380980001234'
+              redirects: []
