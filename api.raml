@@ -4477,3 +4477,438 @@ uses:
             examples:
               result:
                 status: success
+/courses/users:
+  displayName: Courses Users
+  description: Courses Users in LMSka
+  get:
+    is: [ assets.paging]
+    description: Store Referal
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 3
+                  first_name: Андрей
+                  last_name: Голуб
+                  avatar: https://a.lmska.com/storage/users/3/magnar.jpeg
+                  telephone_code: '380'
+                  telephone_number: '676654620'
+                  telephone_full_number: '380676654620'
+                  email: a@rte.im
+                  role:
+                    id: 1
+                    name: Administrator
+                    role: admin
+                  courses:
+                  - id: 2
+                    title: Тестовий курс
+                    logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                    lessons:
+                      data:
+                      - id: 14
+                        title: HTML теги (теория)
+                      - id: 15
+                        title: HTML теги форматирования текста
+                      - id: 16
+                        title: Создание скелета HTML документа
+                      - id: 17
+                        title: Установка редактора Brackets
+                      - id: 18
+                        title: Шестой урок
+                      - id: 19
+                        title: Седьмой урок
+                      - id: 20
+                        title: Восьмой урок
+                      - id: 106
+                        title: Введение
+                  user_info: 0
+                - id: 29
+                  first_name: Люба
+                  last_name: Любов
+                  avatar: https://a.lmska.com/storage/default.png
+                  telephone_code: '380'
+                  telephone_number: '934561649'
+                  telephone_full_number: '380934561649'
+                  email: inforegtoevent@gmail.com
+                  role:
+                    id: 2
+                    name: Owner
+                    role: owner
+                  courses:
+                  - id: 7
+                    title: Материалы пробный
+                    logo: https://a.lmska.com/storage/logos/courses/7/saas_1.png
+                    lessons:
+                      data:
+                      - id: 81
+                        title: Что такое билетный оператор
+                      - id: 83
+                        title: Типы билетов в RegToEVENT
+                      - id: 84
+                        title: Апгрейд билета
+                      - id: 85
+                        title: Дополнительные опции
+                      - id: 86
+                        title: Расписание цен
+                      - id: 87
+                        title: Форма регистрации
+                      - id: 88
+                        title: Интеграция формы
+                      - id: 89
+                        title: Оплата билетов
+                      - id: 90
+                        title: Сайт события
+                      - id: 91
+                        title: Оформление билета
+                      - id: 92
+                        title: Промокоды
+                      - id: 93
+                        title: Онлайн трансляции
+                      - id: 94
+                        title: Чат-боты и рассылки
+                      - id: 95
+                        title: Роли пользователей
+                      - id: 96
+                        title: Дополнительные возможности
+                      - id: 97
+                        title: Возможные сценарии
+                      - id: 98
+                        title: Часто задаваемые вопросы
+                      - id: 216
+                        title: Урок тест домашка стандарт
+                  user_info: 0
+                - id: 38
+                  first_name: Лектор
+                  last_name: Иванов
+                  avatar: https://a.lmska.com/storage/default.png
+                  telephone_code: '380'
+                  telephone_number: '123126862'
+                  telephone_full_number: '380123126862'
+                  email: lector@test.lms
+                  role:
+                    id: 4
+                    name: Lecturer
+                    role: lecturer
+                  courses:
+                  - id: 7
+                    title: Материалы пробный
+                    logo: https://a.lmska.com/storage/logos/courses/7/saas_1.png
+                    lessons:
+                      data:
+                      - id: 81
+                        title: Что такое билетный оператор
+                      - id: 83
+                        title: Типы билетов в RegToEVENT
+                      - id: 84
+                        title: Апгрейд билета
+                      - id: 85
+                        title: Дополнительные опции
+                      - id: 86
+                        title: Расписание цен
+                      - id: 87
+                        title: Форма регистрации
+                      - id: 88
+                        title: Интеграция формы
+                      - id: 89
+                        title: Оплата билетов
+                      - id: 90
+                        title: Сайт события
+                      - id: 91
+                        title: Оформление билета
+                      - id: 92
+                        title: Промокоды
+                      - id: 93
+                        title: Онлайн трансляции
+                      - id: 94
+                        title: Чат-боты и рассылки
+                      - id: 95
+                        title: Роли пользователей
+                      - id: 96
+                        title: Дополнительные возможности
+                      - id: 97
+                        title: Возможные сценарии
+                      - id: 98
+                        title: Часто задаваемые вопросы
+                      - id: 216
+                        title: Урок тест домашка стандарт
+                  user_info: 0
+                - id: 50
+                  first_name: bvhrk
+                  last_name: bvhrk
+                  avatar: https://a.lmska.com/storage/default.png
+                  telephone_code: '380'
+                  telephone_number: '123354612'
+                  telephone_full_number: '380123354612'
+                  email: svfrxtfibwnujivsev@bvhrk.com
+                  role:
+                    id: 4
+                    name: Lecturer
+                    role: lecturer
+                  courses:
+                  - id: 2
+                    title: Тестовий курс
+                    logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                    lessons:
+                      data:
+                      - id: 14
+                        title: HTML теги (теория)
+                      - id: 15
+                        title: HTML теги форматирования текста
+                      - id: 16
+                        title: Создание скелета HTML документа
+                      - id: 17
+                        title: Установка редактора Brackets
+                      - id: 18
+                        title: Шестой урок
+                      - id: 19
+                        title: Седьмой урок
+                      - id: 20
+                        title: Восьмой урок
+                      - id: 106
+                        title: Введение
+                  user_info: 0
+                - id: 54
+                  first_name: prepod
+                  last_name: avatal
+                  avatar: https://a.lmska.com/storage/default.png
+                  telephone_code: '380'
+                  telephone_number: '523479009'
+                  telephone_full_number: '380523479009'
+                  email: pr1@rte.com
+                  role:
+                    id: 4
+                    name: Lecturer
+                    role: lecturer
+                  courses:
+                  - id: 7
+                    title: Материалы пробный
+                    logo: https://a.lmska.com/storage/logos/courses/7/saas_1.png
+                    lessons:
+                      data:
+                      - id: 81
+                        title: Что такое билетный оператор
+                      - id: 83
+                        title: Типы билетов в RegToEVENT
+                      - id: 84
+                        title: Апгрейд билета
+                      - id: 85
+                        title: Дополнительные опции
+                      - id: 86
+                        title: Расписание цен
+                      - id: 87
+                        title: Форма регистрации
+                      - id: 88
+                        title: Интеграция формы
+                      - id: 89
+                        title: Оплата билетов
+                      - id: 90
+                        title: Сайт события
+                      - id: 91
+                        title: Оформление билета
+                      - id: 92
+                        title: Промокоды
+                      - id: 93
+                        title: Онлайн трансляции
+                      - id: 94
+                        title: Чат-боты и рассылки
+                      - id: 95
+                        title: Роли пользователей
+                      - id: 96
+                        title: Дополнительные возможности
+                      - id: 97
+                        title: Возможные сценарии
+                      - id: 98
+                        title: Часто задаваемые вопросы
+                      - id: 216
+                        title: Урок тест домашка стандарт
+                  user_info: 0
+                - id: 81
+                  first_name: Калека
+                  last_name: Мухтаров
+                  avatar: https://a.lmska.com/storage/default.png
+                  telephone_code: '380'
+                  telephone_number: '234241234'
+                  telephone_full_number: '380234241234'
+                  email: snova3@prepod.com
+                  role:
+                    id: 4
+                    name: Lecturer
+                    role: lecturer
+                  courses:
+                  - id: 7
+                    title: Материалы пробный
+                    logo: https://a.lmska.com/storage/logos/courses/7/saas_1.png
+                    lessons:
+                      data:
+                      - id: 81
+                        title: Что такое билетный оператор
+                      - id: 83
+                        title: Типы билетов в RegToEVENT
+                      - id: 84
+                        title: Апгрейд билета
+                      - id: 85
+                        title: Дополнительные опции
+                      - id: 86
+                        title: Расписание цен
+                      - id: 87
+                        title: Форма регистрации
+                      - id: 88
+                        title: Интеграция формы
+                      - id: 89
+                        title: Оплата билетов
+                      - id: 90
+                        title: Сайт события
+                      - id: 91
+                        title: Оформление билета
+                      - id: 92
+                        title: Промокоды
+                      - id: 93
+                        title: Онлайн трансляции
+                      - id: 94
+                        title: Чат-боты и рассылки
+                      - id: 95
+                        title: Роли пользователей
+                      - id: 96
+                        title: Дополнительные возможности
+                      - id: 97
+                        title: Возможные сценарии
+                      - id: 98
+                        title: Часто задаваемые вопросы
+                      - id: 216
+                        title: Урок тест домашка стандарт
+                  user_info: 0
+                - id: 83
+                  first_name: Nikitosss
+                  last_name: Barbados
+                  avatar: https://a.lmska.com/storage/users/83/62576171.png
+                  telephone_code: '380'
+                  telephone_number: '234234272'
+                  telephone_full_number: '380234234272'
+                  email: nikel@mukel.com
+                  role:
+                    id: 4
+                    name: Lecturer
+                    role: lecturer
+                  courses:
+                  - id: 2
+                    title: Тестовий курс
+                    logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                    lessons:
+                      data:
+                      - id: 14
+                        title: HTML теги (теория)
+                      - id: 15
+                        title: HTML теги форматирования текста
+                      - id: 16
+                        title: Создание скелета HTML документа
+                      - id: 17
+                        title: Установка редактора Brackets
+                      - id: 18
+                        title: Шестой урок
+                      - id: 19
+                        title: Седьмой урок
+                      - id: 20
+                        title: Восьмой урок
+                      - id: 106
+                        title: Введение
+                  - id: 7
+                    title: Материалы пробный
+                    logo: https://a.lmska.com/storage/logos/courses/7/saas_1.png
+                    lessons:
+                      data:
+                      - id: 81
+                        title: Что такое билетный оператор
+                      - id: 83
+                        title: Типы билетов в RegToEVENT
+                      - id: 84
+                        title: Апгрейд билета
+                      - id: 85
+                        title: Дополнительные опции
+                      - id: 86
+                        title: Расписание цен
+                      - id: 87
+                        title: Форма регистрации
+                      - id: 88
+                        title: Интеграция формы
+                      - id: 89
+                        title: Оплата билетов
+                      - id: 90
+                        title: Сайт события
+                      - id: 91
+                        title: Оформление билета
+                      - id: 92
+                        title: Промокоды
+                      - id: 93
+                        title: Онлайн трансляции
+                      - id: 94
+                        title: Чат-боты и рассылки
+                      - id: 95
+                        title: Роли пользователей
+                      - id: 96
+                        title: Дополнительные возможности
+                      - id: 97
+                        title: Возможные сценарии
+                      - id: 98
+                        title: Часто задаваемые вопросы
+                      - id: 216
+                        title: Урок тест домашка стандарт
+                  user_info: 0
+                - id: 116
+                  first_name: prep2
+                  last_name: pod
+                  avatar: https://a.lmska.com/storage/default.png
+                  telephone_code: '380'
+                  telephone_number: '386554545'
+                  telephone_full_number: '380386554545'
+                  email: pent@fmail.com
+                  role:
+                    id: 4
+                    name: Lecturer
+                    role: lecturer
+                  courses:
+                  - id: 7
+                    title: Материалы пробный
+                    logo: https://a.lmska.com/storage/logos/courses/7/saas_1.png
+                    lessons:
+                      data:
+                      - id: 81
+                        title: Что такое билетный оператор
+                      - id: 83
+                        title: Типы билетов в RegToEVENT
+                      - id: 84
+                        title: Апгрейд билета
+                      - id: 85
+                        title: Дополнительные опции
+                      - id: 86
+                        title: Расписание цен
+                      - id: 87
+                        title: Форма регистрации
+                      - id: 88
+                        title: Интеграция формы
+                      - id: 89
+                        title: Оплата билетов
+                      - id: 90
+                        title: Сайт события
+                      - id: 91
+                        title: Оформление билета
+                      - id: 92
+                        title: Промокоды
+                      - id: 93
+                        title: Онлайн трансляции
+                      - id: 94
+                        title: Чат-боты и рассылки
+                      - id: 95
+                        title: Роли пользователей
+                      - id: 96
+                        title: Дополнительные возможности
+                      - id: 97
+                        title: Возможные сценарии
+                      - id: 98
+                        title: Часто задаваемые вопросы
+                      - id: 216
+                        title: Урок тест домашка стандарт
+                  user_info: 0

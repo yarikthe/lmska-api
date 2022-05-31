@@ -4683,4 +4683,760 @@ pre code {
   "redirects": []
 }</code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="ref__id__delete"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_delete">delete</span> <span class="parent"></span>/ref/{id}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Store Referal</p></div><ul class="nav nav-tabs"><li class="active"><a href="#ref__id__delete_request" data-toggle="tab">Request</a></li><li><a href="#ref__id__delete_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="ref__id__delete_request"><h3>URI Parameters</h3><ul><li><strong>id</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="ref__id__delete_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>{
   "status": "success"
-}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li></ul></div></div></div></div></body></html>
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="courses_users" class="panel-title">Courses Users</h3></div><div class="panel-body"><div class="top-resource-description"><p>Courses Users in LMSka</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_courses_users"><span class="parent"></span>/courses/users</a> <span class="methods"><a href="#courses_users_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_courses_users" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#courses_users_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Store Referal</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="courses_users_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/courses/users</h4></div><div class="modal-body"><div class="alert alert-info"><p>Store Referal</p></div><ul class="nav nav-tabs"><li class="active"><a href="#courses_users_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="courses_users_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>{
+  "data": [
+    {
+      "id": 3,
+      "first_name": "Андрей",
+      "last_name": "Голуб",
+      "avatar": "https://a.lmska.com/storage/users/3/magnar.jpeg",
+      "telephone_code": "380",
+      "telephone_number": "676654620",
+      "telephone_full_number": "380676654620",
+      "email": "a@rte.im",
+      "role": {
+        "id": 1,
+        "name": "Administrator",
+        "role": "admin"
+      },
+      "courses": [
+        {
+          "id": 2,
+          "title": "Тестовий курс",
+          "logo": "https://a.lmska.com/storage/logos/courses/2/logo.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 14,
+                "title": "HTML теги (теория)"
+              },
+              {
+                "id": 15,
+                "title": "HTML теги форматирования текста"
+              },
+              {
+                "id": 16,
+                "title": "Создание скелета HTML документа"
+              },
+              {
+                "id": 17,
+                "title": "Установка редактора Brackets"
+              },
+              {
+                "id": 18,
+                "title": "Шестой урок"
+              },
+              {
+                "id": 19,
+                "title": "Седьмой урок"
+              },
+              {
+                "id": 20,
+                "title": "Восьмой урок"
+              },
+              {
+                "id": 106,
+                "title": "Введение"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 29,
+      "first_name": "Люба",
+      "last_name": "Любов",
+      "avatar": "https://a.lmska.com/storage/default.png",
+      "telephone_code": "380",
+      "telephone_number": "934561649",
+      "telephone_full_number": "380934561649",
+      "email": "inforegtoevent@gmail.com",
+      "role": {
+        "id": 2,
+        "name": "Owner",
+        "role": "owner"
+      },
+      "courses": [
+        {
+          "id": 7,
+          "title": "Материалы пробный",
+          "logo": "https://a.lmska.com/storage/logos/courses/7/saas_1.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 81,
+                "title": "Что такое билетный оператор"
+              },
+              {
+                "id": 83,
+                "title": "Типы билетов в RegToEVENT"
+              },
+              {
+                "id": 84,
+                "title": "Апгрейд билета"
+              },
+              {
+                "id": 85,
+                "title": "Дополнительные опции"
+              },
+              {
+                "id": 86,
+                "title": "Расписание цен"
+              },
+              {
+                "id": 87,
+                "title": "Форма регистрации"
+              },
+              {
+                "id": 88,
+                "title": "Интеграция формы"
+              },
+              {
+                "id": 89,
+                "title": "Оплата билетов"
+              },
+              {
+                "id": 90,
+                "title": "Сайт события"
+              },
+              {
+                "id": 91,
+                "title": "Оформление билета"
+              },
+              {
+                "id": 92,
+                "title": "Промокоды"
+              },
+              {
+                "id": 93,
+                "title": "Онлайн трансляции"
+              },
+              {
+                "id": 94,
+                "title": "Чат-боты и рассылки"
+              },
+              {
+                "id": 95,
+                "title": "Роли пользователей"
+              },
+              {
+                "id": 96,
+                "title": "Дополнительные возможности"
+              },
+              {
+                "id": 97,
+                "title": "Возможные сценарии"
+              },
+              {
+                "id": 98,
+                "title": "Часто задаваемые вопросы"
+              },
+              {
+                "id": 216,
+                "title": "Урок тест домашка стандарт"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 38,
+      "first_name": "Лектор",
+      "last_name": "Иванов",
+      "avatar": "https://a.lmska.com/storage/default.png",
+      "telephone_code": "380",
+      "telephone_number": "123126862",
+      "telephone_full_number": "380123126862",
+      "email": "lector@test.lms",
+      "role": {
+        "id": 4,
+        "name": "Lecturer",
+        "role": "lecturer"
+      },
+      "courses": [
+        {
+          "id": 7,
+          "title": "Материалы пробный",
+          "logo": "https://a.lmska.com/storage/logos/courses/7/saas_1.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 81,
+                "title": "Что такое билетный оператор"
+              },
+              {
+                "id": 83,
+                "title": "Типы билетов в RegToEVENT"
+              },
+              {
+                "id": 84,
+                "title": "Апгрейд билета"
+              },
+              {
+                "id": 85,
+                "title": "Дополнительные опции"
+              },
+              {
+                "id": 86,
+                "title": "Расписание цен"
+              },
+              {
+                "id": 87,
+                "title": "Форма регистрации"
+              },
+              {
+                "id": 88,
+                "title": "Интеграция формы"
+              },
+              {
+                "id": 89,
+                "title": "Оплата билетов"
+              },
+              {
+                "id": 90,
+                "title": "Сайт события"
+              },
+              {
+                "id": 91,
+                "title": "Оформление билета"
+              },
+              {
+                "id": 92,
+                "title": "Промокоды"
+              },
+              {
+                "id": 93,
+                "title": "Онлайн трансляции"
+              },
+              {
+                "id": 94,
+                "title": "Чат-боты и рассылки"
+              },
+              {
+                "id": 95,
+                "title": "Роли пользователей"
+              },
+              {
+                "id": 96,
+                "title": "Дополнительные возможности"
+              },
+              {
+                "id": 97,
+                "title": "Возможные сценарии"
+              },
+              {
+                "id": 98,
+                "title": "Часто задаваемые вопросы"
+              },
+              {
+                "id": 216,
+                "title": "Урок тест домашка стандарт"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 50,
+      "first_name": "bvhrk",
+      "last_name": "bvhrk",
+      "avatar": "https://a.lmska.com/storage/default.png",
+      "telephone_code": "380",
+      "telephone_number": "123354612",
+      "telephone_full_number": "380123354612",
+      "email": "svfrxtfibwnujivsev@bvhrk.com",
+      "role": {
+        "id": 4,
+        "name": "Lecturer",
+        "role": "lecturer"
+      },
+      "courses": [
+        {
+          "id": 2,
+          "title": "Тестовий курс",
+          "logo": "https://a.lmska.com/storage/logos/courses/2/logo.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 14,
+                "title": "HTML теги (теория)"
+              },
+              {
+                "id": 15,
+                "title": "HTML теги форматирования текста"
+              },
+              {
+                "id": 16,
+                "title": "Создание скелета HTML документа"
+              },
+              {
+                "id": 17,
+                "title": "Установка редактора Brackets"
+              },
+              {
+                "id": 18,
+                "title": "Шестой урок"
+              },
+              {
+                "id": 19,
+                "title": "Седьмой урок"
+              },
+              {
+                "id": 20,
+                "title": "Восьмой урок"
+              },
+              {
+                "id": 106,
+                "title": "Введение"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 54,
+      "first_name": "prepod",
+      "last_name": "avatal",
+      "avatar": "https://a.lmska.com/storage/default.png",
+      "telephone_code": "380",
+      "telephone_number": "523479009",
+      "telephone_full_number": "380523479009",
+      "email": "pr1@rte.com",
+      "role": {
+        "id": 4,
+        "name": "Lecturer",
+        "role": "lecturer"
+      },
+      "courses": [
+        {
+          "id": 7,
+          "title": "Материалы пробный",
+          "logo": "https://a.lmska.com/storage/logos/courses/7/saas_1.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 81,
+                "title": "Что такое билетный оператор"
+              },
+              {
+                "id": 83,
+                "title": "Типы билетов в RegToEVENT"
+              },
+              {
+                "id": 84,
+                "title": "Апгрейд билета"
+              },
+              {
+                "id": 85,
+                "title": "Дополнительные опции"
+              },
+              {
+                "id": 86,
+                "title": "Расписание цен"
+              },
+              {
+                "id": 87,
+                "title": "Форма регистрации"
+              },
+              {
+                "id": 88,
+                "title": "Интеграция формы"
+              },
+              {
+                "id": 89,
+                "title": "Оплата билетов"
+              },
+              {
+                "id": 90,
+                "title": "Сайт события"
+              },
+              {
+                "id": 91,
+                "title": "Оформление билета"
+              },
+              {
+                "id": 92,
+                "title": "Промокоды"
+              },
+              {
+                "id": 93,
+                "title": "Онлайн трансляции"
+              },
+              {
+                "id": 94,
+                "title": "Чат-боты и рассылки"
+              },
+              {
+                "id": 95,
+                "title": "Роли пользователей"
+              },
+              {
+                "id": 96,
+                "title": "Дополнительные возможности"
+              },
+              {
+                "id": 97,
+                "title": "Возможные сценарии"
+              },
+              {
+                "id": 98,
+                "title": "Часто задаваемые вопросы"
+              },
+              {
+                "id": 216,
+                "title": "Урок тест домашка стандарт"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 81,
+      "first_name": "Калека",
+      "last_name": "Мухтаров",
+      "avatar": "https://a.lmska.com/storage/default.png",
+      "telephone_code": "380",
+      "telephone_number": "234241234",
+      "telephone_full_number": "380234241234",
+      "email": "snova3@prepod.com",
+      "role": {
+        "id": 4,
+        "name": "Lecturer",
+        "role": "lecturer"
+      },
+      "courses": [
+        {
+          "id": 7,
+          "title": "Материалы пробный",
+          "logo": "https://a.lmska.com/storage/logos/courses/7/saas_1.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 81,
+                "title": "Что такое билетный оператор"
+              },
+              {
+                "id": 83,
+                "title": "Типы билетов в RegToEVENT"
+              },
+              {
+                "id": 84,
+                "title": "Апгрейд билета"
+              },
+              {
+                "id": 85,
+                "title": "Дополнительные опции"
+              },
+              {
+                "id": 86,
+                "title": "Расписание цен"
+              },
+              {
+                "id": 87,
+                "title": "Форма регистрации"
+              },
+              {
+                "id": 88,
+                "title": "Интеграция формы"
+              },
+              {
+                "id": 89,
+                "title": "Оплата билетов"
+              },
+              {
+                "id": 90,
+                "title": "Сайт события"
+              },
+              {
+                "id": 91,
+                "title": "Оформление билета"
+              },
+              {
+                "id": 92,
+                "title": "Промокоды"
+              },
+              {
+                "id": 93,
+                "title": "Онлайн трансляции"
+              },
+              {
+                "id": 94,
+                "title": "Чат-боты и рассылки"
+              },
+              {
+                "id": 95,
+                "title": "Роли пользователей"
+              },
+              {
+                "id": 96,
+                "title": "Дополнительные возможности"
+              },
+              {
+                "id": 97,
+                "title": "Возможные сценарии"
+              },
+              {
+                "id": 98,
+                "title": "Часто задаваемые вопросы"
+              },
+              {
+                "id": 216,
+                "title": "Урок тест домашка стандарт"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 83,
+      "first_name": "Nikitosss",
+      "last_name": "Barbados",
+      "avatar": "https://a.lmska.com/storage/users/83/62576171.png",
+      "telephone_code": "380",
+      "telephone_number": "234234272",
+      "telephone_full_number": "380234234272",
+      "email": "nikel@mukel.com",
+      "role": {
+        "id": 4,
+        "name": "Lecturer",
+        "role": "lecturer"
+      },
+      "courses": [
+        {
+          "id": 2,
+          "title": "Тестовий курс",
+          "logo": "https://a.lmska.com/storage/logos/courses/2/logo.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 14,
+                "title": "HTML теги (теория)"
+              },
+              {
+                "id": 15,
+                "title": "HTML теги форматирования текста"
+              },
+              {
+                "id": 16,
+                "title": "Создание скелета HTML документа"
+              },
+              {
+                "id": 17,
+                "title": "Установка редактора Brackets"
+              },
+              {
+                "id": 18,
+                "title": "Шестой урок"
+              },
+              {
+                "id": 19,
+                "title": "Седьмой урок"
+              },
+              {
+                "id": 20,
+                "title": "Восьмой урок"
+              },
+              {
+                "id": 106,
+                "title": "Введение"
+              }
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "title": "Материалы пробный",
+          "logo": "https://a.lmska.com/storage/logos/courses/7/saas_1.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 81,
+                "title": "Что такое билетный оператор"
+              },
+              {
+                "id": 83,
+                "title": "Типы билетов в RegToEVENT"
+              },
+              {
+                "id": 84,
+                "title": "Апгрейд билета"
+              },
+              {
+                "id": 85,
+                "title": "Дополнительные опции"
+              },
+              {
+                "id": 86,
+                "title": "Расписание цен"
+              },
+              {
+                "id": 87,
+                "title": "Форма регистрации"
+              },
+              {
+                "id": 88,
+                "title": "Интеграция формы"
+              },
+              {
+                "id": 89,
+                "title": "Оплата билетов"
+              },
+              {
+                "id": 90,
+                "title": "Сайт события"
+              },
+              {
+                "id": 91,
+                "title": "Оформление билета"
+              },
+              {
+                "id": 92,
+                "title": "Промокоды"
+              },
+              {
+                "id": 93,
+                "title": "Онлайн трансляции"
+              },
+              {
+                "id": 94,
+                "title": "Чат-боты и рассылки"
+              },
+              {
+                "id": 95,
+                "title": "Роли пользователей"
+              },
+              {
+                "id": 96,
+                "title": "Дополнительные возможности"
+              },
+              {
+                "id": 97,
+                "title": "Возможные сценарии"
+              },
+              {
+                "id": 98,
+                "title": "Часто задаваемые вопросы"
+              },
+              {
+                "id": 216,
+                "title": "Урок тест домашка стандарт"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    },
+    {
+      "id": 116,
+      "first_name": "prep2",
+      "last_name": "pod",
+      "avatar": "https://a.lmska.com/storage/default.png",
+      "telephone_code": "380",
+      "telephone_number": "386554545",
+      "telephone_full_number": "380386554545",
+      "email": "pent@fmail.com",
+      "role": {
+        "id": 4,
+        "name": "Lecturer",
+        "role": "lecturer"
+      },
+      "courses": [
+        {
+          "id": 7,
+          "title": "Материалы пробный",
+          "logo": "https://a.lmska.com/storage/logos/courses/7/saas_1.png",
+          "lessons": {
+            "data": [
+              {
+                "id": 81,
+                "title": "Что такое билетный оператор"
+              },
+              {
+                "id": 83,
+                "title": "Типы билетов в RegToEVENT"
+              },
+              {
+                "id": 84,
+                "title": "Апгрейд билета"
+              },
+              {
+                "id": 85,
+                "title": "Дополнительные опции"
+              },
+              {
+                "id": 86,
+                "title": "Расписание цен"
+              },
+              {
+                "id": 87,
+                "title": "Форма регистрации"
+              },
+              {
+                "id": 88,
+                "title": "Интеграция формы"
+              },
+              {
+                "id": 89,
+                "title": "Оплата билетов"
+              },
+              {
+                "id": 90,
+                "title": "Сайт события"
+              },
+              {
+                "id": 91,
+                "title": "Оформление билета"
+              },
+              {
+                "id": 92,
+                "title": "Промокоды"
+              },
+              {
+                "id": 93,
+                "title": "Онлайн трансляции"
+              },
+              {
+                "id": 94,
+                "title": "Чат-боты и рассылки"
+              },
+              {
+                "id": 95,
+                "title": "Роли пользователей"
+              },
+              {
+                "id": 96,
+                "title": "Дополнительные возможности"
+              },
+              {
+                "id": 97,
+                "title": "Возможные сценарии"
+              },
+              {
+                "id": 98,
+                "title": "Часто задаваемые вопросы"
+              },
+              {
+                "id": 216,
+                "title": "Урок тест домашка стандарт"
+              }
+            ]
+          }
+        }
+      ],
+      "user_info": 0
+    }
+  ]
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li></ul></div></div></div></div></body></html>
