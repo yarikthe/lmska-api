@@ -5488,4 +5488,519 @@ pre code {
     "hidden": 0,
     "advice_title": "Создайте помошников"
   }
-]</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li><li><a href="#advices">Advices</a></li></ul></div></div></div></div></body></html>
+]</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="fee_promocodes" class="panel-title">Fee Promocodes</h3></div><div class="panel-body"><div class="top-resource-description"><p>Fee Promocodes in LMSka</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_fee_promocodes"><span class="parent"></span>/fee-promocodes</a> <span class="methods"><a href="#fee_promocodes_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_fee_promocodes" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#fee_promocodes_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Fee Promocodes in LMSka</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="fee_promocodes_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/fee-promocodes</h4></div><div class="modal-body"><div class="alert alert-info"><p>Fee Promocodes in LMSka</p></div><ul class="nav nav-tabs"><li class="active"><a href="#fee_promocodes_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fee_promocodes_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>{
+  "data": [
+    {
+      "id": 13,
+      "name": "solver99",
+      "setting": "{\"ticket_order\": 1, \"ticket_number\": null, \"numeric_discount\": null, \"interest_discount\": \"99\"}",
+      "remaining": 8,
+      "total_amount": 30,
+      "status": 0,
+      "active_end_date": "2022-01-31 00:00:00",
+      "types": [
+        {
+          "id": 2,
+          "fee": "repetitor",
+          "class": 2,
+          "total_subscriptions": 500,
+          "courses_quantity": 1,
+          "storage_capacity": 5000000000,
+          "name": "Репетитор",
+          "pivot": {
+            "fee_promo_code_id": 13,
+            "fee_type_id": 2
+          },
+          "translations": [
+            {
+              "id": 1,
+              "name": "Репетитор",
+              "locale": "ru",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "Репетітор",
+              "locale": "ua",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "Repetitor",
+              "locale": "en",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "fee": "lecturer",
+          "class": 3,
+          "total_subscriptions": 1500,
+          "courses_quantity": 3,
+          "storage_capacity": 10000000000,
+          "name": "Учитель",
+          "pivot": {
+            "fee_promo_code_id": 13,
+            "fee_type_id": 3
+          },
+          "translations": [
+            {
+              "id": 4,
+              "name": "Учитель",
+              "locale": "ru",
+              "fee_type_id": 3,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 5,
+              "name": "Вчитель",
+              "locale": "ua",
+              "fee_type_id": 3,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 6,
+              "name": "Lecturer",
+              "locale": "en",
+              "fee_type_id": 3,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "fee": "guru",
+          "class": 4,
+          "total_subscriptions": 5000,
+          "courses_quantity": 5,
+          "storage_capacity": 20000000000,
+          "name": "Гуру",
+          "pivot": {
+            "fee_promo_code_id": 13,
+            "fee_type_id": 4
+          },
+          "translations": [
+            {
+              "id": 7,
+              "name": "Гуру",
+              "locale": "ru",
+              "fee_type_id": 4,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 8,
+              "name": "Гуру",
+              "locale": "ua",
+              "fee_type_id": 4,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 9,
+              "name": "Guru",
+              "locale": "en",
+              "fee_type_id": 4,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "fee": "expert",
+          "class": 5,
+          "total_subscriptions": 8000,
+          "courses_quantity": 10,
+          "storage_capacity": 50000000000,
+          "name": "Експерт",
+          "pivot": {
+            "fee_promo_code_id": 13,
+            "fee_type_id": 5
+          },
+          "translations": [
+            {
+              "id": 10,
+              "name": "Експерт",
+              "locale": "ru",
+              "fee_type_id": 5,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 11,
+              "name": "Експерт",
+              "locale": "ua",
+              "fee_type_id": 5,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 12,
+              "name": "Expert",
+              "locale": "en",
+              "fee_type_id": 5,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "промо_репетитор",
+      "setting": "{\"ticket_order\": 1, \"ticket_number\": null, \"numeric_discount\": null, \"interest_discount\": \"50\"}",
+      "remaining": 13,
+      "total_amount": 22,
+      "status": 1,
+      "active_end_date": "2022-04-30 00:00:00",
+      "types": [
+        {
+          "id": 2,
+          "fee": "repetitor",
+          "class": 2,
+          "total_subscriptions": 500,
+          "courses_quantity": 1,
+          "storage_capacity": 5000000000,
+          "name": "Репетитор",
+          "pivot": {
+            "fee_promo_code_id": 14,
+            "fee_type_id": 2
+          },
+          "translations": [
+            {
+              "id": 1,
+              "name": "Репетитор",
+              "locale": "ru",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "Репетітор",
+              "locale": "ua",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "Repetitor",
+              "locale": "en",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "reftest",
+      "setting": "{\"ticket_order\": 1, \"ticket_number\": null, \"numeric_discount\": \"94\", \"interest_discount\": null}",
+      "remaining": 3,
+      "total_amount": 10,
+      "status": 1,
+      "active_end_date": "2022-05-15 00:00:00",
+      "types": [
+        {
+          "id": 2,
+          "fee": "repetitor",
+          "class": 2,
+          "total_subscriptions": 500,
+          "courses_quantity": 1,
+          "storage_capacity": 5000000000,
+          "name": "Репетитор",
+          "pivot": {
+            "fee_promo_code_id": 15,
+            "fee_type_id": 2
+          },
+          "translations": [
+            {
+              "id": 1,
+              "name": "Репетитор",
+              "locale": "ru",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "Репетітор",
+              "locale": "ua",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "Repetitor",
+              "locale": "en",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "promo666",
+      "setting": "{\"ticket_order\": 1, \"ticket_number\": null, \"numeric_discount\": null, \"interest_discount\": \"99\"}",
+      "remaining": 662,
+      "total_amount": 666,
+      "status": 1,
+      "active_end_date": "2022-05-17 11:32:32",
+      "types": [
+        {
+          "id": 1,
+          "fee": "commission",
+          "class": 1,
+          "total_subscriptions": 10,
+          "courses_quantity": 1,
+          "storage_capacity": 100000000,
+          "name": "7 дней демо",
+          "pivot": {
+            "fee_promo_code_id": 16,
+            "fee_type_id": 1
+          },
+          "translations": [
+            {
+              "id": 17,
+              "name": "7 дней демо",
+              "locale": "ru",
+              "fee_type_id": 1,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 18,
+              "name": "7 діб демо",
+              "locale": "ua",
+              "fee_type_id": 1,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 19,
+              "name": "7 days demo",
+              "locale": "en",
+              "fee_type_id": 1,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "fee": "repetitor",
+          "class": 2,
+          "total_subscriptions": 500,
+          "courses_quantity": 1,
+          "storage_capacity": 5000000000,
+          "name": "Репетитор",
+          "pivot": {
+            "fee_promo_code_id": 16,
+            "fee_type_id": 2
+          },
+          "translations": [
+            {
+              "id": 1,
+              "name": "Репетитор",
+              "locale": "ru",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "Репетітор",
+              "locale": "ua",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "Repetitor",
+              "locale": "en",
+              "fee_type_id": 2,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "fee": "lecturer",
+          "class": 3,
+          "total_subscriptions": 1500,
+          "courses_quantity": 3,
+          "storage_capacity": 10000000000,
+          "name": "Учитель",
+          "pivot": {
+            "fee_promo_code_id": 16,
+            "fee_type_id": 3
+          },
+          "translations": [
+            {
+              "id": 4,
+              "name": "Учитель",
+              "locale": "ru",
+              "fee_type_id": 3,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 5,
+              "name": "Вчитель",
+              "locale": "ua",
+              "fee_type_id": 3,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 6,
+              "name": "Lecturer",
+              "locale": "en",
+              "fee_type_id": 3,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "fee": "guru",
+          "class": 4,
+          "total_subscriptions": 5000,
+          "courses_quantity": 5,
+          "storage_capacity": 20000000000,
+          "name": "Гуру",
+          "pivot": {
+            "fee_promo_code_id": 16,
+            "fee_type_id": 4
+          },
+          "translations": [
+            {
+              "id": 7,
+              "name": "Гуру",
+              "locale": "ru",
+              "fee_type_id": 4,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 8,
+              "name": "Гуру",
+              "locale": "ua",
+              "fee_type_id": 4,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 9,
+              "name": "Guru",
+              "locale": "en",
+              "fee_type_id": 4,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "fee": "expert",
+          "class": 5,
+          "total_subscriptions": 8000,
+          "courses_quantity": 10,
+          "storage_capacity": 50000000000,
+          "name": "Експерт",
+          "pivot": {
+            "fee_promo_code_id": 16,
+            "fee_type_id": 5
+          },
+          "translations": [
+            {
+              "id": 10,
+              "name": "Експерт",
+              "locale": "ru",
+              "fee_type_id": 5,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 11,
+              "name": "Експерт",
+              "locale": "ua",
+              "fee_type_id": 5,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 12,
+              "name": "Expert",
+              "locale": "en",
+              "fee_type_id": 5,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "fee": "producer",
+          "class": 6,
+          "total_subscriptions": 15000,
+          "courses_quantity": 25,
+          "storage_capacity": 100000000000,
+          "name": "Продюсер",
+          "pivot": {
+            "fee_promo_code_id": 16,
+            "fee_type_id": 6
+          },
+          "translations": [
+            {
+              "id": 13,
+              "name": "Продюсер",
+              "locale": "ru",
+              "fee_type_id": 6,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 14,
+              "name": "Продюсер",
+              "locale": "ua",
+              "fee_type_id": 6,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            },
+            {
+              "id": 15,
+              "name": "Producer",
+              "locale": "en",
+              "fee_type_id": 6,
+              "created_at": "2021-12-31T10:28:49.000000Z",
+              "updated_at": "2021-12-31T10:28:49.000000Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li><li><a href="#advices">Advices</a></li><li><a href="#fee_promocodes">Fee Promocodes</a></li></ul></div></div></div></div></body></html>

@@ -4957,3 +4957,401 @@ uses:
                   advice_text: "<p>Вам доступны несколько ролей с разным доступом:</p><p>1. <strong>Преподователь</strong> видит отдельные уроки и ДЗ по ним;</p><p>2. <strong>Тикет Партнер</strong> - поможет привлекать новые заказы – и вы видите отдельно его статистику;</p><p>3. <strong>Соорганизатор</strong> - видит отдельный курс и все по обучению. Но не может менять базовые настройки и не видит финансы.</p>"
                   hidden: 0
                   advice_title: Создайте помошников
+/fee-promocodes:
+  displayName: Fee Promocodes
+  description: Fee Promocodes in LMSka
+  get:
+    is: [ assets.paging]
+    description: Fee Promocodes in LMSka
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 13
+                  name: solver99
+                  setting: '{"ticket_order": 1, "ticket_number": null, "numeric_discount": null, "interest_discount":
+                    "99"}'
+                  remaining: 8
+                  total_amount: 30
+                  status: 0
+                  active_end_date: '2022-01-31 00:00:00'
+                  types:
+                  - id: 2
+                    fee: repetitor
+                    class: 2
+                    total_subscriptions: 500
+                    courses_quantity: 1
+                    storage_capacity: 5000000000
+                    name: Репетитор
+                    pivot:
+                      fee_promo_code_id: 13
+                      fee_type_id: 2
+                    translations:
+                    - id: 1
+                      name: Репетитор
+                      locale: ru
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 2
+                      name: Репетітор
+                      locale: ua
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 3
+                      name: Repetitor
+                      locale: en
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 3
+                    fee: lecturer
+                    class: 3
+                    total_subscriptions: 1500
+                    courses_quantity: 3
+                    storage_capacity: 10000000000
+                    name: Учитель
+                    pivot:
+                      fee_promo_code_id: 13
+                      fee_type_id: 3
+                    translations:
+                    - id: 4
+                      name: Учитель
+                      locale: ru
+                      fee_type_id: 3
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 5
+                      name: Вчитель
+                      locale: ua
+                      fee_type_id: 3
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 6
+                      name: Lecturer
+                      locale: en
+                      fee_type_id: 3
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 4
+                    fee: guru
+                    class: 4
+                    total_subscriptions: 5000
+                    courses_quantity: 5
+                    storage_capacity: 20000000000
+                    name: Гуру
+                    pivot:
+                      fee_promo_code_id: 13
+                      fee_type_id: 4
+                    translations:
+                    - id: 7
+                      name: Гуру
+                      locale: ru
+                      fee_type_id: 4
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 8
+                      name: Гуру
+                      locale: ua
+                      fee_type_id: 4
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 9
+                      name: Guru
+                      locale: en
+                      fee_type_id: 4
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 5
+                    fee: expert
+                    class: 5
+                    total_subscriptions: 8000
+                    courses_quantity: 10
+                    storage_capacity: 50000000000
+                    name: Експерт
+                    pivot:
+                      fee_promo_code_id: 13
+                      fee_type_id: 5
+                    translations:
+                    - id: 10
+                      name: Експерт
+                      locale: ru
+                      fee_type_id: 5
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 11
+                      name: Експерт
+                      locale: ua
+                      fee_type_id: 5
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 12
+                      name: Expert
+                      locale: en
+                      fee_type_id: 5
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                - id: 14
+                  name: промо_репетитор
+                  setting: '{"ticket_order": 1, "ticket_number": null, "numeric_discount": null, "interest_discount":
+                    "50"}'
+                  remaining: 13
+                  total_amount: 22
+                  status: 1
+                  active_end_date: '2022-04-30 00:00:00'
+                  types:
+                  - id: 2
+                    fee: repetitor
+                    class: 2
+                    total_subscriptions: 500
+                    courses_quantity: 1
+                    storage_capacity: 5000000000
+                    name: Репетитор
+                    pivot:
+                      fee_promo_code_id: 14
+                      fee_type_id: 2
+                    translations:
+                    - id: 1
+                      name: Репетитор
+                      locale: ru
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 2
+                      name: Репетітор
+                      locale: ua
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 3
+                      name: Repetitor
+                      locale: en
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                - id: 15
+                  name: reftest
+                  setting: '{"ticket_order": 1, "ticket_number": null, "numeric_discount": "94", "interest_discount":
+                    null}'
+                  remaining: 3
+                  total_amount: 10
+                  status: 1
+                  active_end_date: '2022-05-15 00:00:00'
+                  types:
+                  - id: 2
+                    fee: repetitor
+                    class: 2
+                    total_subscriptions: 500
+                    courses_quantity: 1
+                    storage_capacity: 5000000000
+                    name: Репетитор
+                    pivot:
+                      fee_promo_code_id: 15
+                      fee_type_id: 2
+                    translations:
+                    - id: 1
+                      name: Репетитор
+                      locale: ru
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 2
+                      name: Репетітор
+                      locale: ua
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 3
+                      name: Repetitor
+                      locale: en
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                - id: 16
+                  name: promo666
+                  setting: '{"ticket_order": 1, "ticket_number": null, "numeric_discount": null, "interest_discount":
+                    "99"}'
+                  remaining: 662
+                  total_amount: 666
+                  status: 1
+                  active_end_date: '2022-05-17 11:32:32'
+                  types:
+                  - id: 1
+                    fee: commission
+                    class: 1
+                    total_subscriptions: 10
+                    courses_quantity: 1
+                    storage_capacity: 100000000
+                    name: 7 дней демо
+                    pivot:
+                      fee_promo_code_id: 16
+                      fee_type_id: 1
+                    translations:
+                    - id: 17
+                      name: 7 дней демо
+                      locale: ru
+                      fee_type_id: 1
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 18
+                      name: 7 діб демо
+                      locale: ua
+                      fee_type_id: 1
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 19
+                      name: 7 days demo
+                      locale: en
+                      fee_type_id: 1
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 2
+                    fee: repetitor
+                    class: 2
+                    total_subscriptions: 500
+                    courses_quantity: 1
+                    storage_capacity: 5000000000
+                    name: Репетитор
+                    pivot:
+                      fee_promo_code_id: 16
+                      fee_type_id: 2
+                    translations:
+                    - id: 1
+                      name: Репетитор
+                      locale: ru
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 2
+                      name: Репетітор
+                      locale: ua
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 3
+                      name: Repetitor
+                      locale: en
+                      fee_type_id: 2
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 3
+                    fee: lecturer
+                    class: 3
+                    total_subscriptions: 1500
+                    courses_quantity: 3
+                    storage_capacity: 10000000000
+                    name: Учитель
+                    pivot:
+                      fee_promo_code_id: 16
+                      fee_type_id: 3
+                    translations:
+                    - id: 4
+                      name: Учитель
+                      locale: ru
+                      fee_type_id: 3
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 5
+                      name: Вчитель
+                      locale: ua
+                      fee_type_id: 3
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 6
+                      name: Lecturer
+                      locale: en
+                      fee_type_id: 3
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 4
+                    fee: guru
+                    class: 4
+                    total_subscriptions: 5000
+                    courses_quantity: 5
+                    storage_capacity: 20000000000
+                    name: Гуру
+                    pivot:
+                      fee_promo_code_id: 16
+                      fee_type_id: 4
+                    translations:
+                    - id: 7
+                      name: Гуру
+                      locale: ru
+                      fee_type_id: 4
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 8
+                      name: Гуру
+                      locale: ua
+                      fee_type_id: 4
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 9
+                      name: Guru
+                      locale: en
+                      fee_type_id: 4
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 5
+                    fee: expert
+                    class: 5
+                    total_subscriptions: 8000
+                    courses_quantity: 10
+                    storage_capacity: 50000000000
+                    name: Експерт
+                    pivot:
+                      fee_promo_code_id: 16
+                      fee_type_id: 5
+                    translations:
+                    - id: 10
+                      name: Експерт
+                      locale: ru
+                      fee_type_id: 5
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 11
+                      name: Експерт
+                      locale: ua
+                      fee_type_id: 5
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 12
+                      name: Expert
+                      locale: en
+                      fee_type_id: 5
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                  - id: 6
+                    fee: producer
+                    class: 6
+                    total_subscriptions: 15000
+                    courses_quantity: 25
+                    storage_capacity: 100000000000
+                    name: Продюсер
+                    pivot:
+                      fee_promo_code_id: 16
+                      fee_type_id: 6
+                    translations:
+                    - id: 13
+                      name: Продюсер
+                      locale: ru
+                      fee_type_id: 6
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 14
+                      name: Продюсер
+                      locale: ua
+                      fee_type_id: 6
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
+                    - id: 15
+                      name: Producer
+                      locale: en
+                      fee_type_id: 6
+                      created_at: '2021-12-31T10:28:49.000000Z'
+                      updated_at: '2021-12-31T10:28:49.000000Z'
