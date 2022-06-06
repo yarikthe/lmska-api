@@ -4912,3 +4912,48 @@ uses:
                       - id: 216
                         title: Урок тест домашка стандарт
                   user_info: 0
+/advices:
+  displayName: Advices
+  description: Advices in LMSka
+  get:
+    is: [ assets.paging]
+    description: Advices in LMSka
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                - id: 15
+                  advice_text: "<p>Следите за таблицей успеваемости - при необходимости подбадривайте студентов у которых плохо идут дела</p>"
+                  hidden: 0
+                  advice_title: Оценки
+                - id: 14
+                  advice_text: <p>В настройках урока - добавьте "демо урок" который будет виден людям на лендинге - для того чтобы потенциальные ученики не боялись купить кота в мешке</p>
+                  hidden: 0
+                  advice_title: Демо-урок
+                - id: 13
+                  advice_text: "<p>Создавайте «чек поинты» для удобной проверки видео ДЗ</p>"
+                  hidden: 0
+                  advice_title: Домашние задания
+                - id: 12
+                  advice_text: "<p>Вы можете написать личные сообщения любому из учеников</p>"
+                  hidden: 0
+                  advice_title: Сообщения
+                - id: 11
+                  advice_text: "<p>Проверяйте статистику тестов – чтобы найти самые сложные вопросы для студентов</p>"
+                  hidden: 0
+                  advice_title: Тесты
+                - id: 10
+                  advice_text: "<p>Автоматически напоминайте ученикам о не пройденных заданиях, новых ответах или о неоплаченном заказе</p>"
+                  hidden: 0
+                  advice_title: Настройте Тригерные уведомления
+                - id: 9
+                  advice_text: <p>Подключите Телеграм бота для уведомлений. <a href="https://a.lmska.com/#/chat-bot-telegram" rel="noopener noreferrer" target="_blank"><strong><u>Открыть</u></strong></a></p>
+                  hidden: 0
+                  advice_title: Telgram bot
+                - id: 8
+                  advice_text: "<p>Вам доступны несколько ролей с разным доступом:</p><p>1. <strong>Преподователь</strong> видит отдельные уроки и ДЗ по ним;</p><p>2. <strong>Тикет Партнер</strong> - поможет привлекать новые заказы – и вы видите отдельно его статистику;</p><p>3. <strong>Соорганизатор</strong> - видит отдельный курс и все по обучению. Но не может менять базовые настройки и не видит финансы.</p>"
+                  hidden: 0
+                  advice_title: Создайте помошников
