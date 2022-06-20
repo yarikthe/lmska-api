@@ -2,7 +2,7 @@
 title: LMSka API
 version: 1.0
 baseUri: https://a.lmska.com/api
-description: © 2022. LMSka - Learning Managment System. Developer Axonax, LLC.
+description: © 2022. LMSka - Learning Managment System.
 
 uses:
   assets: assets.lib.raml
@@ -4973,8 +4973,7 @@ uses:
                 data:
                 - id: 13
                   name: solver99
-                  setting: '{"ticket_order": 1, "ticket_number": null, "numeric_discount": null, "interest_discount":
-                    "99"}'
+                  setting: '{"ticket_order": 1, "ticket_number": null, "numeric_discount": null, "interest_discount": "99"}'
                   remaining: 8
                   total_amount: 30
                   status: 0
@@ -5790,3 +5789,44 @@ uses:
                       - id: 216
                         title: Урок тест домашка стандарт
                   user_info: 0
+/tests/pass/{test_id}:
+  displayName: Answers on Test Lssson of Course
+  description: Send amswers on test lesson of Course
+  post:
+    is: [ assets.paging]
+    description: Send amswers on test lesson of Course
+    queryParameters:
+      answers:
+        type: json
+        description: List answer id and question id
+        required: true
+        example:  
+          answers:
+          - question_id: 76
+            answer_id: 204
+          - question_id: 77
+            answer_id: 207
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                answers:
+                  correct:
+                    '90': Ничего
+                    '91': Ничего
+                    '92': Ничего
+                    '93': Ничего
+                    '94': Ничего
+                  user:
+                    '76':
+                      question_text: '1'
+                      user_answers:
+                      - 204
+                    '77':
+                      question_text: '2'
+                      user_answers:
+                      - 207
+                score: 0
