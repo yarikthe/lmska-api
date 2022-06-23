@@ -5830,3 +5830,22 @@ uses:
                       user_answers:
                       - 207
                 score: 0
+/homeworks/{homework_id}/passes/:
+  displayName: Send homework Type 3 on Lssson of Course  
+  description: Send text task homework on Lssson of Course
+  post:
+    is: [ assets.paging]
+    description:Send homework on Lssson of Course
+    queryParameters:
+      text:
+        type: String
+        description: Answer on text question
+        required: true
+        example: "Homework is greate example"
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                status: "success"
