@@ -6564,3 +6564,64 @@ uses:
                 scheme_password:
                 end_of_access_by_date:
                 end_of_access_by_days:
+/courses/{course_id}/payment-systems:
+  displayName: Payments Systems of Course   
+  description: Avaliable Payments Systems in Course 
+  get:
+    is: [ assets.paging]
+    description: Avaliable Payments Systems in Course 
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+              - id: 9
+                setting:
+                type_id: 7
+                name: cash
+                course_id: 7
+                verified: 1
+                activated: 1
+                created_at: '2022-03-28T14:44:08.000000Z'
+                updated_at: '2022-03-28T14:44:08.000000Z'
+                mode: 1
+              - id: 10
+                setting:
+                  nonCashName: безнал
+                  companyName: ООО ППП
+                  uridAddress: КИев
+                  edrpou: '121212121212'
+                  iban: ИВАН3434454565432345434534
+                  taxPayerSertificate:
+                  typeTax: ediniyPodatok
+                  typeTaxGeneral:
+                  typeTaxPdv:
+                  tax: include
+                  taxAmount:
+                  phoneNumber: 23-23-222-22
+                  paymentPurpose: За тестирование
+                  dateExpired: '2'
+                  pdfDocs:
+                type_id: 6
+                name: non-cash
+                course_id: 7
+                verified: 1
+                activated: 1
+                created_at: '2022-03-31T15:13:34.000000Z'
+                updated_at: '2022-03-31T16:44:36.000000Z'
+                mode: 1
+              - id: 28
+                setting:
+                  holder:
+                    ClientID: Aa7TomrKE-Bl6aDJnSUu72SLmNk4rwDZNFvyzIO3Ky0CW_Araxg2nyiuHCYMI__MOltm2vTvS_TfWaNl
+                    ClientSecret: EMlAbq3d4Ac6VqlyJqAk6Tm7DwUYBglfBiIC3xMqoQrVkddRZeuJoe_RKMEchhvOjSfGzJe5dS8NtL0O
+                type_id: 1
+                name: paypal
+                course_id: 7
+                verified: 1
+                activated: 1
+                created_at: '2022-05-09T12:57:33.000000Z'
+                updated_at: '2022-05-09T13:02:42.000000Z'
+                mode: 1

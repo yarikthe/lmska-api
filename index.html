@@ -7639,4 +7639,62 @@ pre code {
     "end_of_access_by_date": null,
     "end_of_access_by_days": null
   }
-]</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li><li><a href="#courses_users">Users of Course 2.0</a></li><li><a href="#advices">Advices</a></li><li><a href="#fee_promocodes">Fee Promocodes</a></li><li><a href="#tests_pass__test_id_">Answers on Test Lssson of Course</a></li><li><a href="#homeworks__homework_id__passes">Send homework Type 3 on Lssson of Course</a></li><li><a href="#courses__course_id__form">Form of Course</a></li><li><a href="#courses__course_id__orders_tickets_schemas">Tarifs of Course</a></li></ul></div></div></div></div></body></html>
+]</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="courses__course_id__payment_systems" class="panel-title">Payments Systems of Course</h3></div><div class="panel-body"><div class="top-resource-description"><p>Avaliable Payments Systems in Course</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_courses__course_id__payment_systems"><span class="parent"></span>/courses/{course_id}/payment-systems</a> <span class="methods"><a href="#courses__course_id__payment_systems_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_courses__course_id__payment_systems" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#courses__course_id__payment_systems_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Avaliable Payments Systems in Course</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="courses__course_id__payment_systems_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/courses/{course_id}/payment-systems</h4></div><div class="modal-body"><div class="alert alert-info"><p>Avaliable Payments Systems in Course</p></div><ul class="nav nav-tabs"><li class="active"><a href="#courses__course_id__payment_systems_get_request" data-toggle="tab">Request</a></li><li><a href="#courses__course_id__payment_systems_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="courses__course_id__payment_systems_get_request"><h3>URI Parameters</h3><ul><li><strong>course_id</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="courses__course_id__payment_systems_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>[
+  {
+    "id": 9,
+    "setting": null,
+    "type_id": 7,
+    "name": "cash",
+    "course_id": 7,
+    "verified": 1,
+    "activated": 1,
+    "created_at": "2022-03-28T14:44:08.000000Z",
+    "updated_at": "2022-03-28T14:44:08.000000Z",
+    "mode": 1
+  },
+  {
+    "id": 10,
+    "setting": {
+      "nonCashName": "безнал",
+      "companyName": "ООО ППП",
+      "uridAddress": "КИев",
+      "edrpou": "121212121212",
+      "iban": "ИВАН3434454565432345434534",
+      "taxPayerSertificate": "!$$$novalue",
+      "typeTax": "ediniyPodatok",
+      "typeTaxGeneral": "!$$$novalue",
+      "typeTaxPdv": "!$$$novalue",
+      "tax": "include",
+      "taxAmount": "!$$$novalue",
+      "phoneNumber": "23-23-222-22",
+      "paymentPurpose": "За тестирование",
+      "dateExpired": "2",
+      "pdfDocs": "!$$$novalue"
+    },
+    "type_id": 6,
+    "name": "non-cash",
+    "course_id": 7,
+    "verified": 1,
+    "activated": 1,
+    "created_at": "2022-03-31T15:13:34.000000Z",
+    "updated_at": "2022-03-31T16:44:36.000000Z",
+    "mode": 1
+  },
+  {
+    "id": 28,
+    "setting": {
+      "holder": {
+        "ClientID": "Aa7TomrKE-Bl6aDJnSUu72SLmNk4rwDZNFvyzIO3Ky0CW_Araxg2nyiuHCYMI__MOltm2vTvS_TfWaNl",
+        "ClientSecret": "EMlAbq3d4Ac6VqlyJqAk6Tm7DwUYBglfBiIC3xMqoQrVkddRZeuJoe_RKMEchhvOjSfGzJe5dS8NtL0O"
+      }
+    },
+    "type_id": 1,
+    "name": "paypal",
+    "course_id": 7,
+    "verified": 1,
+    "activated": 1,
+    "created_at": "2022-05-09T12:57:33.000000Z",
+    "updated_at": "2022-05-09T13:02:42.000000Z",
+    "mode": 1
+  }
+]</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li><li><a href="#courses_users">Users of Course 2.0</a></li><li><a href="#advices">Advices</a></li><li><a href="#fee_promocodes">Fee Promocodes</a></li><li><a href="#tests_pass__test_id_">Answers on Test Lssson of Course</a></li><li><a href="#homeworks__homework_id__passes">Send homework Type 3 on Lssson of Course</a></li><li><a href="#courses__course_id__form">Form of Course</a></li><li><a href="#courses__course_id__orders_tickets_schemas">Tarifs of Course</a></li><li><a href="#courses__course_id__payment_systems">Payments Systems of Course</a></li></ul></div></div></div></div></body></html>
