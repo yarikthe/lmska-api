@@ -6625,3 +6625,236 @@ uses:
                 created_at: '2022-05-09T12:57:33.000000Z'
                 updated_at: '2022-05-09T13:02:42.000000Z'
                 mode: 1
+/courses/{course_id}/final-test/testing/{id}:
+  displayName: Pass Final test of Course
+  description: Send answers of Final Test 
+  post:
+    is: [ assets.paging]
+    description: Send answers of Final Test
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                id: 104
+                user_id: 239
+                final_test_id: 4
+                test_data: '[{"id": 87, "answers": [{"id": 258, "created_at": "2022-05-03T20:04:10.000000Z",
+                  "deleted_at": null, "is_correct": 1, "updated_at": "2022-06-17T08:40:11.000000Z",
+                  "answer_text": "а", "question_id": 87, "right_answer_score": 1}, {"id": 259, "created_at":
+                  "2022-05-03T20:04:10.000000Z", "deleted_at": null, "is_correct": 0, "updated_at":
+                  "2022-06-17T08:40:11.000000Z", "answer_text": "б", "question_id": 87, "right_answer_score":
+                  1}, {"id": 260, "created_at": "2022-05-03T20:04:10.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-06-17T08:40:11.000000Z", "answer_text": "в",
+                  "question_id": 87, "right_answer_score": 1}], "test_id": 41, "position": 0, "created_at":
+                  "2022-05-03T20:04:10.000000Z", "deleted_at": null, "updated_at": "2022-06-17T08:40:11.000000Z",
+                  "question_text": "Урок 1 вопрос 3"}, {"id": 88, "answers": [{"id": 261, "created_at":
+                  "2022-05-03T20:04:10.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-06-17T08:40:11.000000Z", "answer_text": "а", "question_id": 88, "right_answer_score":
+                  1}, {"id": 262, "created_at": "2022-05-03T20:04:10.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-06-17T08:40:11.000000Z", "answer_text": "б",
+                  "question_id": 88, "right_answer_score": 1}, {"id": 263, "created_at": "2022-05-03T20:04:10.000000Z",
+                  "deleted_at": null, "is_correct": 0, "updated_at": "2022-06-17T08:40:11.000000Z",
+                  "answer_text": "в", "question_id": 88, "right_answer_score": 1}], "test_id": 41,
+                  "position": 1, "created_at": "2022-05-03T20:04:10.000000Z", "deleted_at": null,
+                  "updated_at": "2022-06-17T08:40:11.000000Z", "question_text": "Урок 1 вопрос 2"},
+                  {"id": 89, "answers": [{"id": 264, "created_at": "2022-05-03T20:04:10.000000Z",
+                  "deleted_at": null, "is_correct": 1, "updated_at": "2022-06-17T08:40:11.000000Z",
+                  "answer_text": "а", "question_id": 89, "right_answer_score": 1}, {"id": 265, "created_at":
+                  "2022-05-03T20:04:10.000000Z", "deleted_at": null, "is_correct": 0, "updated_at":
+                  "2022-06-17T08:40:11.000000Z", "answer_text": "б", "question_id": 89, "right_answer_score":
+                  1}, {"id": 266, "created_at": "2022-05-03T20:04:10.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-06-17T08:40:11.000000Z", "answer_text": "в",
+                  "question_id": 89, "right_answer_score": 1}], "test_id": 41, "position": 2, "created_at":
+                  "2022-05-03T20:04:10.000000Z", "deleted_at": null, "updated_at": "2022-06-17T08:40:11.000000Z",
+                  "question_text": "Урок 1 вопрос 1"}, {"id": 90, "answers": [{"id": 267, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:05:08.000000Z", "answer_text": "а", "question_id": 90, "right_answer_score":
+                  1}, {"id": 268, "created_at": "2022-05-03T20:05:08.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:05:08.000000Z", "answer_text": "п",
+                  "question_id": 90, "right_answer_score": 1}], "test_id": 42, "position": 0, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:05:08.000000Z",
+                  "question_text": "Урок 2 вопрос 5"}, {"id": 91, "answers": [{"id": 269, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:05:08.000000Z", "answer_text": "а", "question_id": 91, "right_answer_score":
+                  1}, {"id": 270, "created_at": "2022-05-03T20:05:08.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:05:08.000000Z", "answer_text": "б",
+                  "question_id": 91, "right_answer_score": 1}], "test_id": 42, "position": 1, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:05:08.000000Z",
+                  "question_text": "Урок 2 вопрос 4"}, {"id": 92, "answers": [{"id": 271, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:05:08.000000Z", "answer_text": "а", "question_id": 92, "right_answer_score":
+                  1}, {"id": 272, "created_at": "2022-05-03T20:05:08.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:05:08.000000Z", "answer_text": "б",
+                  "question_id": 92, "right_answer_score": 1}], "test_id": 42, "position": 2, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:05:08.000000Z",
+                  "question_text": "Урок 2 вопрос 3"}, {"id": 93, "answers": [{"id": 273, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:05:08.000000Z", "answer_text": "а", "question_id": 93, "right_answer_score":
+                  1}, {"id": 274, "created_at": "2022-05-03T20:05:08.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:05:08.000000Z", "answer_text": "б",
+                  "question_id": 93, "right_answer_score": 1}, {"id": 275, "created_at": "2022-05-03T20:05:08.000000Z",
+                  "deleted_at": null, "is_correct": 0, "updated_at": "2022-05-03T20:05:08.000000Z",
+                  "answer_text": "в", "question_id": 93, "right_answer_score": 1}], "test_id": 42,
+                  "position": 3, "created_at": "2022-05-03T20:05:08.000000Z", "deleted_at": null,
+                  "updated_at": "2022-05-03T20:05:08.000000Z", "question_text": "Урок 2 вопрос 2"},
+                  {"id": 94, "answers": [{"id": 276, "created_at": "2022-05-03T20:05:08.000000Z",
+                  "deleted_at": null, "is_correct": 1, "updated_at": "2022-05-03T20:05:08.000000Z",
+                  "answer_text": "а", "question_id": 94, "right_answer_score": 1}, {"id": 277, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "is_correct": 0, "updated_at":
+                  "2022-05-03T20:05:08.000000Z", "answer_text": "б", "question_id": 94, "right_answer_score":
+                  1}, {"id": 278, "created_at": "2022-05-03T20:05:08.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:05:08.000000Z", "answer_text": "в",
+                  "question_id": 94, "right_answer_score": 1}], "test_id": 42, "position": 4, "created_at":
+                  "2022-05-03T20:05:08.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:05:08.000000Z",
+                  "question_text": "Урок 2 вопрос 1"}, {"id": 95, "answers": [{"id": 279, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:06:01.000000Z", "answer_text": "ы", "question_id": 95, "right_answer_score":
+                  1}, {"id": 280, "created_at": "2022-05-03T20:06:01.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:06:01.000000Z", "answer_text": "р",
+                  "question_id": 95, "right_answer_score": 1}], "test_id": 43, "position": 0, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:06:01.000000Z",
+                  "question_text": "Урок 3 вопрос 5"}, {"id": 96, "answers": [{"id": 281, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:06:01.000000Z", "answer_text": "в", "question_id": 96, "right_answer_score":
+                  1}, {"id": 282, "created_at": "2022-05-03T20:06:01.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:06:01.000000Z", "answer_text": "р",
+                  "question_id": 96, "right_answer_score": 1}], "test_id": 43, "position": 1, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:06:01.000000Z",
+                  "question_text": "Урок 3 вопрос 4"}, {"id": 97, "answers": [{"id": 283, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:06:01.000000Z", "answer_text": "а", "question_id": 97, "right_answer_score":
+                  1}, {"id": 284, "created_at": "2022-05-03T20:06:01.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:06:01.000000Z", "answer_text": "п",
+                  "question_id": 97, "right_answer_score": 1}], "test_id": 43, "position": 2, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:06:01.000000Z",
+                  "question_text": "Урок 3 вопрос 3"}, {"id": 98, "answers": [{"id": 285, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:06:01.000000Z", "answer_text": "а", "question_id": 98, "right_answer_score":
+                  1}, {"id": 286, "created_at": "2022-05-03T20:06:01.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:06:01.000000Z", "answer_text": "а",
+                  "question_id": 98, "right_answer_score": 1}], "test_id": 43, "position": 3, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:06:01.000000Z",
+                  "question_text": "Урок 3 вопрос 2"}, {"id": 99, "answers": [{"id": 287, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:06:01.000000Z", "answer_text": "в", "question_id": 99, "right_answer_score":
+                  1}, {"id": 288, "created_at": "2022-05-03T20:06:01.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:06:01.000000Z", "answer_text": "п",
+                  "question_id": 99, "right_answer_score": 1}], "test_id": 43, "position": 4, "created_at":
+                  "2022-05-03T20:06:01.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:06:01.000000Z",
+                  "question_text": "Урок 3 вопрос 1"}, {"id": 105, "answers": [{"id": 299, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:08:27.000000Z", "answer_text": "выа", "question_id": 105, "right_answer_score":
+                  1}, {"id": 300, "created_at": "2022-05-03T20:08:27.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:08:27.000000Z", "answer_text": "ыва",
+                  "question_id": 105, "right_answer_score": 1}], "test_id": 45, "position": 0, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:08:27.000000Z",
+                  "question_text": "Урок 5 вопрос 5"}, {"id": 106, "answers": [{"id": 301, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:08:27.000000Z", "answer_text": "ва", "question_id": 106, "right_answer_score":
+                  1}, {"id": 302, "created_at": "2022-05-03T20:08:27.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:08:27.000000Z", "answer_text": "ыва",
+                  "question_id": 106, "right_answer_score": 1}], "test_id": 45, "position": 1, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:08:27.000000Z",
+                  "question_text": "Урок 5 вопрос 4"}, {"id": 107, "answers": [{"id": 303, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:08:27.000000Z", "answer_text": "чы", "question_id": 107, "right_answer_score":
+                  1}, {"id": 304, "created_at": "2022-05-03T20:08:27.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:08:27.000000Z", "answer_text": "ыв",
+                  "question_id": 107, "right_answer_score": 1}], "test_id": 45, "position": 2, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:08:27.000000Z",
+                  "question_text": "Урок 5 вопрос 3"}, {"id": 108, "answers": [{"id": 305, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:08:27.000000Z", "answer_text": "в", "question_id": 108, "right_answer_score":
+                  1}, {"id": 306, "created_at": "2022-05-03T20:08:27.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:08:27.000000Z", "answer_text": "ва",
+                  "question_id": 108, "right_answer_score": 1}], "test_id": 45, "position": 3, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "updated_at": "2022-05-03T20:08:27.000000Z",
+                  "question_text": "Урок 5 вопрос 2"}, {"id": 109, "answers": [{"id": 307, "created_at":
+                  "2022-05-03T20:08:27.000000Z", "deleted_at": null, "is_correct": 1, "updated_at":
+                  "2022-05-03T20:08:27.000000Z", "answer_text": "ыва", "question_id": 109, "right_answer_score":
+                  1}, {"id": 308, "created_at": "2022-05-03T20:08:27.000000Z", "deleted_at": null,
+                  "is_correct": 0, "updated_at": "2022-05-03T20:08:27.000000Z", "answer_text": "а",
+                  "question_id": 109, "right_answer_score": 1}, {"id": 309, "created_at": "2022-05-03T20:08:27.000000Z",
+                  "deleted_at": null, "is_correct": 0, "updated_at": "2022-05-03T20:08:27.000000Z",
+                  "answer_text": "ыва", "question_id": 109, "right_answer_score": 1}], "test_id":
+                  45, "position": 4, "created_at": "2022-05-03T20:08:27.000000Z", "deleted_at": null,
+                  "updated_at": "2022-05-03T20:08:27.000000Z", "question_text": "Урок 5 вопрос 1"},
+                  {"id": 125, "answers": [{"id": 336, "created_at": "2022-05-13T21:08:28.000000Z",
+                  "deleted_at": null, "is_correct": 1, "updated_at": "2022-05-13T21:08:28.000000Z",
+                  "answer_text": "выаыва", "question_id": 125, "right_answer_score": 1}, {"id": 337,
+                  "created_at": "2022-05-13T21:08:28.000000Z", "deleted_at": null, "is_correct": 0,
+                  "updated_at": "2022-05-13T21:08:28.000000Z", "answer_text": "ываыва", "question_id":
+                  125, "right_answer_score": 1}], "test_id": 57, "position": 0, "created_at": "2022-05-13T21:08:28.000000Z",
+                  "deleted_at": null, "updated_at": "2022-05-13T21:08:28.000000Z", "question_text":
+                  "ываыва"}, {"id": 126, "answers": [{"id": 338, "created_at": "2022-05-13T21:08:28.000000Z",
+                  "deleted_at": null, "is_correct": 1, "updated_at": "2022-05-13T21:08:28.000000Z",
+                  "answer_text": "ываыва", "question_id": 126, "right_answer_score": 1}, {"id": 339,
+                  "created_at": "2022-05-13T21:08:28.000000Z", "deleted_at": null, "is_correct": 0,
+                  "updated_at": "2022-05-13T21:08:28.000000Z", "answer_text": "ываыва", "question_id":
+                  126, "right_answer_score": 1}], "test_id": 57, "position": 1, "created_at": "2022-05-13T21:08:28.000000Z",
+                  "deleted_at": null, "updated_at": "2022-05-13T21:08:28.000000Z", "question_text":
+                  "ыавыва"}]'
+                attempt_data: '[{"answer_id": 258, "question_id": 87}, {"answer_id": 261, "question_id":
+                  88}, {"answer_id": 264, "question_id": 89}, {"answer_id": 267, "question_id": 90},
+                  {"answer_id": 269, "question_id": 91}, {"answer_id": 271, "question_id": 92}, {"answer_id":
+                  273, "question_id": 93}, {"answer_id": 276, "question_id": 94}, {"answer_id": 279,
+                  "question_id": 95}, {"answer_id": 281, "question_id": 96}, {"answer_id": 283, "question_id":
+                  97}, {"answer_id": 285, "question_id": 98}, {"answer_id": 287, "question_id": 99},
+                  {"answer_id": 299, "question_id": 105}, {"answer_id": 301, "question_id": 106},
+                  {"answer_id": 303, "question_id": 107}, {"answer_id": 305, "question_id": 108},
+                  {"answer_id": 307, "question_id": 109}, {"answer_id": 336, "question_id": 125},
+                  {"answer_id": 338, "question_id": 126}]'
+                result_data: '{"user": {"87": {"user_answers": [258], "question_text": "Урок 1 вопрос
+                  3"}, "88": {"user_answers": [261], "question_text": "Урок 1 вопрос 2"}, "89": {"user_answers":
+                  [264], "question_text": "Урок 1 вопрос 1"}, "90": {"user_answers": [267], "question_text":
+                  "Урок 2 вопрос 5"}, "91": {"user_answers": [269], "question_text": "Урок 2 вопрос
+                  4"}, "92": {"user_answers": [271], "question_text": "Урок 2 вопрос 3"}, "93": {"user_answers":
+                  [273], "question_text": "Урок 2 вопрос 2"}, "94": {"user_answers": [276], "question_text":
+                  "Урок 2 вопрос 1"}, "95": {"user_answers": [279], "question_text": "Урок 3 вопрос
+                  5"}, "96": {"user_answers": [281], "question_text": "Урок 3 вопрос 4"}, "97": {"user_answers":
+                  [283], "question_text": "Урок 3 вопрос 3"}, "98": {"user_answers": [285], "question_text":
+                  "Урок 3 вопрос 2"}, "99": {"user_answers": [287], "question_text": "Урок 3 вопрос
+                  1"}, "105": {"user_answers": [299], "question_text": "Урок 5 вопрос 5"}, "106":
+                  {"user_answers": [301], "question_text": "Урок 5 вопрос 4"}, "107": {"user_answers":
+                  [303], "question_text": "Урок 5 вопрос 3"}, "108": {"user_answers": [305], "question_text":
+                  "Урок 5 вопрос 2"}, "109": {"user_answers": [307], "question_text": "Урок 5 вопрос
+                  1"}, "125": {"user_answers": [336], "question_text": "ываыва"}, "126": {"user_answers":
+                  [338], "question_text": "ыавыва"}}, "correct": {"87": {"answer_text": {"258": "а",
+                  "259": "б", "260": "в"}, "question_text": "Урок 1 вопрос 3", "right_answers": {"258":
+                  1, "259": 0, "260": 0}}, "88": {"answer_text": {"261": "а", "262": "б", "263": "в"},
+                  "question_text": "Урок 1 вопрос 2", "right_answers": {"261": 1, "262": 0, "263":
+                  0}}, "89": {"answer_text": {"264": "а", "265": "б", "266": "в"}, "question_text":
+                  "Урок 1 вопрос 1", "right_answers": {"264": 1, "265": 0, "266": 0}}, "90": {"answer_text":
+                  {"267": "а", "268": "п"}, "question_text": "Урок 2 вопрос 5", "right_answers": {"267":
+                  1, "268": 0}}, "91": {"answer_text": {"269": "а", "270": "б"}, "question_text":
+                  "Урок 2 вопрос 4", "right_answers": {"269": 1, "270": 0}}, "92": {"answer_text":
+                  {"271": "а", "272": "б"}, "question_text": "Урок 2 вопрос 3", "right_answers": {"271":
+                  1, "272": 0}}, "93": {"answer_text": {"273": "а", "274": "б", "275": "в"}, "question_text":
+                  "Урок 2 вопрос 2", "right_answers": {"273": 1, "274": 0, "275": 0}}, "94": {"answer_text":
+                  {"276": "а", "277": "б", "278": "в"}, "question_text": "Урок 2 вопрос 1", "right_answers":
+                  {"276": 1, "277": 0, "278": 0}}, "95": {"answer_text": {"279": "ы", "280": "р"},
+                  "question_text": "Урок 3 вопрос 5", "right_answers": {"279": 1, "280": 0}}, "96":
+                  {"answer_text": {"281": "в", "282": "р"}, "question_text": "Урок 3 вопрос 4", "right_answers":
+                  {"281": 1, "282": 0}}, "97": {"answer_text": {"283": "а", "284": "п"}, "question_text":
+                  "Урок 3 вопрос 3", "right_answers": {"283": 1, "284": 0}}, "98": {"answer_text":
+                  {"285": "а", "286": "а"}, "question_text": "Урок 3 вопрос 2", "right_answers": {"285":
+                  1, "286": 0}}, "99": {"answer_text": {"287": "в", "288": "п"}, "question_text":
+                  "Урок 3 вопрос 1", "right_answers": {"287": 1, "288": 0}}, "105": {"answer_text":
+                  {"299": "выа", "300": "ыва"}, "question_text": "Урок 5 вопрос 5", "right_answers":
+                  {"299": 1, "300": 0}}, "106": {"answer_text": {"301": "ва", "302": "ыва"}, "question_text":
+                  "Урок 5 вопрос 4", "right_answers": {"301": 1, "302": 0}}, "107": {"answer_text":
+                  {"303": "чы", "304": "ыв"}, "question_text": "Урок 5 вопрос 3", "right_answers":
+                  {"303": 1, "304": 0}}, "108": {"answer_text": {"305": "в", "306": "ва"}, "question_text":
+                  "Урок 5 вопрос 2", "right_answers": {"305": 1, "306": 0}}, "109": {"answer_text":
+                  {"307": "ыва", "308": "а", "309": "ыва"}, "question_text": "Урок 5 вопрос 1", "right_answers":
+                  {"307": 1, "308": 0, "309": 0}}, "125": {"answer_text": {"336": "выаыва", "337":
+                  "ываыва"}, "question_text": "ываыва", "right_answers": {"336": 1, "337": 0}}, "126":
+                  {"answer_text": {"338": "ываыва", "339": "ываыва"}, "question_text": "ыавыва", "right_answers":
+                  {"338": 1, "339": 0}}}}'
+                total_score: 20
+                is_passed: 1
+                created_at: '2022-07-05T10:45:59.000000Z'
+                updated_at: '2022-07-05T10:47:05.000000Z'
