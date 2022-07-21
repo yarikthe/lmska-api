@@ -6858,3 +6858,361 @@ uses:
                 is_passed: 1
                 created_at: '2022-07-05T10:45:59.000000Z'
                 updated_at: '2022-07-05T10:47:05.000000Z'
+/public-course?category=29&my=0:
+  displayName: Public Course   
+  description: Get public course
+  get:
+    is: [ assets.paging]
+    description: Get public course all, by category and auth or not user
+    queryParameters:
+      category:
+        type: int
+        description: ID Category
+        required: false
+        example: 29
+      my:
+        type: int
+        description: 1 - Auth user course 0 - Not auth user course
+        required: false
+        example: 1
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            examples:
+              result:
+                data:
+                - id: 15
+                  title: Курс не для слабонервных
+                  description: "<p>blahblah</p>"
+                  address: online
+                  address_lat:
+                  address_lng:
+                  registration_start: '2022-05-05 09:21:00'
+                  registration_end: '2022-05-20 09:21:00'
+                  course_start: '2022-07-12 11:00:00'
+                  course_end: '2022-07-31 11:00:00'
+                  owner:
+                    id: 6
+                    first_name:
+                    last_name:
+                    avatar: https://a.lmska.com/storage/default.png
+                    telephone_code: '380'
+                    telephone_number: '663703106'
+                    company:
+                    email: dorofeevn95@gmail.com
+                    role:
+                      id: 2
+                      name: Owner
+                      role: owner
+                  setting:
+                    status:
+                      id: 2
+                      name: Active
+                      status: active
+                    category:
+                      id: 29
+                      name: Programming
+                      category: programming
+                      locales:
+                        en: Programming
+                        ua: Програмування
+                        ru: Программирование
+                    subject:
+                      id: 1
+                      name: Informational technologies
+                      subject: information_technologies
+                    recount_currency:
+                    payment_currency:
+                      id: 5
+                      name: Poland Zloty
+                      currency: zloty
+                      iso_code: pln
+                    check_in:
+                    language:
+                      id: 2
+                      name: Ukrainian
+                      language: ukrainian
+                      iso_code: ua
+                    country:
+                      id: 1
+                      name: Ukraine
+                      country: ukraine
+                      iso_code: ua
+                      languages:
+                      - id: 2
+                        name: Ukrainian
+                        language: ukrainian
+                        iso_code: ua
+                      - id: 3
+                        name: Russian
+                        language: russian
+                        iso_code: ru
+                      - id: 6
+                        name: Hungarian
+                        language: hungarian
+                        iso_code: hu
+                      - id: 7
+                        name: Romanian
+                        language: romanian
+                        iso_code: ro
+                      currencies:
+                      - id: 1
+                        name: Ukrainian Hryvnia
+                        currency: hryvnia
+                        iso_code: uah
+                      - id: 4
+                        name: Russian Ruble
+                        currency: ruble
+                        iso_code: rub
+                    fix_commission:
+                    percent_commission:
+                    self_system_commission_included_payment: true
+                    payment_system_commission_included_payment: true
+                    payment_activated: true
+                    ticket_description_top:
+                    ticket_description_bottom:
+                    contact_email:
+                    is_contact_email_verified: 0
+                    contact_phone:
+                    contact_telegram:
+                    contact_name:
+                    offer_text:
+                    affiliate_text:
+                    registration_first_step_text: "\r\n    <p>EN:</p>\r\n<p>When registering for the
+                      Курс не для слабонервных course, you (or someone else) specified this email
+                      as a contact email. An account has been created for you at <a href=\"https://c.lmska.net\">https://c.lmska.net</a>\r\nYou
+                      can see your orders and change ticket data in your account on your own</p>\r\n<br/>\r\n<p>УК:</p>\r\n<p>При
+                      реєстрації на подію Курс не для слабонервных ви (або хтось інший) вказали цей
+                      email як контактний. Вам був створений кабінет за адресою <a href=\"https://c.lmska.net\">https://c.lmska.net</a>\r\nВи
+                      можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно</p>\r\n<br/>\r\n<p>РУ:</p>\r\n<p>При
+                      регистрации на событие Курс не для слабонервных вы ( или кто то другой) указали
+                      этот email как контактный. Вам был создан кабинет по адресу\r\n<a href=\"https://c.lmska.net\">https://c.lmska.net</a>\r\nВы
+                      можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно</p>"
+                    ticket_with_text:
+                    online_text:
+                    course_url:
+                    fb_link_group:
+                    available_duplicate_contacts: 0
+                    use_ticket_schema_emails: 0
+                    lesson_schema_graph: "[]"
+                    use_lesson_schema_graph: 0
+                  logo: https://lmska-bucket-2.s3.eu-central-1.amazonaws.com/public/materials/15/FJuILHOWTt2yaX9e3j6m35bLYaNK0CW9c0BTeO9A.jpg
+                  logo_type: png
+                  subway_station:
+                  location_name:
+                  created_at: '2022-05-05T06:23:04.000000Z'
+                  updated_at: '2022-07-12T08:00:17.000000Z'
+                  fill_step:
+                    id: 11
+                    main_setting_step: 1
+                    ticket_schema_step: 1
+                    mail_test_step: 0
+                    register_form_step: 1
+                    site_course_step: 1
+                    payment_method_step: 0
+                    course_id: 15
+                    created_at: '2022-05-05T06:23:04.000000Z'
+                    updated_at: '2022-07-12T08:02:09.000000Z'
+                    promo_codes_step: 0
+                    streaming_links_step: 0
+                  statistics: []
+                  finances: []
+                  stream_schemas: []
+                  test_questions_amount: 0
+                  rates:
+                    average_rate: 0
+                    count: 0
+                    rate_weight: '{"5":0,"4":0,"3":0,"2":0,"1":0}'
+                  user_info: 0
+                  is_available: 1
+                  available_to:
+                  diploma_template:
+                  school_name: Ммм
+                  is_public: 1
+                  student_referral_percent: 1
+                - id: 2
+                  title: Тестовий курс
+                  description: "<p>Описание для тестового курса</p>"
+                  address: online
+                  address_lat:
+                  address_lng:
+                  registration_start: '2021-12-31 13:11:00'
+                  registration_end: '2025-12-31 13:11:00'
+                  course_start: '2021-12-31 13:11:00'
+                  course_end: '2022-12-31 09:00:00'
+                  owner:
+                    id: 3
+                    first_name: Андрей
+                    last_name: Голуб
+                    avatar: https://a.lmska.com/storage/public/logos/users/jO5AFN36TxxLqL8D1XJdyR8okSCFYg3M9m8ypY8h.jpg
+                    telephone_code: '380'
+                    telephone_number: '676654620'
+                    company:
+                    email: a@rte.im
+                    role:
+                      id: 1
+                      name: Administrator
+                      role: admin
+                  setting:
+                    status:
+                      id: 2
+                      name: Active
+                      status: active
+                    category:
+                      id: 29
+                      name: Programming
+                      category: programming
+                      locales:
+                        en: Programming
+                        ua: Програмування
+                        ru: Программирование
+                    subject:
+                      id: 1
+                      name: Informational technologies
+                      subject: information_technologies
+                    recount_currency:
+                    payment_currency:
+                      id: 2
+                      name: American Dollar
+                      currency: american_dollar
+                      iso_code: usd
+                    check_in:
+                    language:
+                      id: 2
+                      name: Ukrainian
+                      language: ukrainian
+                      iso_code: ua
+                    country:
+                      id: 1
+                      name: Ukraine
+                      country: ukraine
+                      iso_code: ua
+                      languages:
+                      - id: 2
+                        name: Ukrainian
+                        language: ukrainian
+                        iso_code: ua
+                      - id: 3
+                        name: Russian
+                        language: russian
+                        iso_code: ru
+                      - id: 6
+                        name: Hungarian
+                        language: hungarian
+                        iso_code: hu
+                      - id: 7
+                        name: Romanian
+                        language: romanian
+                        iso_code: ro
+                      currencies:
+                      - id: 1
+                        name: Ukrainian Hryvnia
+                        currency: hryvnia
+                        iso_code: uah
+                      - id: 4
+                        name: Russian Ruble
+                        currency: ruble
+                        iso_code: rub
+                    fix_commission: '0.000'
+                    percent_commission: '0.00'
+                    self_system_commission_included_payment: true
+                    payment_system_commission_included_payment: true
+                    payment_activated: true
+                    ticket_description_top:
+                    ticket_description_bottom:
+                    contact_email: flokiowl@gmail.com
+                    is_contact_email_verified: 1
+                    contact_phone: "+380676654620"
+                    contact_telegram: https://t.me/flokiowl
+                    contact_name: Зинаида Петровна
+                    offer_text:
+                    affiliate_text:
+                    registration_first_step_text: |2-
+
+                          <p>EN:</p>
+                      <p>When registering for the Тестовый курс course, you (or someone else) specified this email as a contact email. An account has been created for you at <a href="https://c.rte.im">https://c.rte.im</a>
+                      You can see your orders and change ticket data in your account on your own</p>
+                      <br/>
+                      <p>УК:</p>
+                      <p>При реєстрації на подію Тестовый курс ви (або хтось інший) вказали цей email як контактний. Вам був створений кабінет за адресою <a href="https://c.rte.im">https://c.rte.im</a>
+                      Ви можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно</p>
+                      <br/>
+                      <p>РУ:</p>
+                      <p>При регистрации на событие Тестовый курс вы ( или кто то другой) указали этот email как контактный. Вам был создан кабинет по адресу
+                      <a href="https://c.rte.im">https://c.rte.im</a>
+                      Вы можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно</p>
+                    ticket_with_text:
+                    online_text:
+                    course_url: https://pornhub.com
+                    fb_link_group: https://www.facebook.com/friends/requests/?profile_id=100080512400322
+                    available_duplicate_contacts: 0
+                    use_ticket_schema_emails: 0
+                    lesson_schema_graph: '{"edges": {"1": {"source": "106", "target": "17"}, "2":
+                      {"source": "17", "target": "14"}, "3": {"source": "14", "target": "16"}, "4":
+                      {"source": "16", "target": "15"}, "5": {"source": "15", "target": "18"}, "6":
+                      {"source": "18", "target": "19"}, "7": {"source": "19", "target": "20"}}, "nodes":
+                      {"14": {"id": 14, "url": "/course/2/lessons/14", "name": "HTML теги (\nтеория)",
+                      "radius": 60, "position": 2, "strokeColor": "#5d78ff"}, "15": {"id": 15, "url":
+                      "/course/2/lessons/15", "name": "HTML теги фо\nрматирования\n текста", "radius":
+                      60, "position": 4, "strokeColor": "#fd397a"}, "16": {"id": 16, "url": "/course/2/lessons/16",
+                      "name": "Создание ске\nлета HTML до\nкумента", "radius": 60, "position": 3,
+                      "strokeColor": "#5d78ff"}, "17": {"id": 17, "url": "/course/2/lessons/17", "name":
+                      "Установка ре\nдактора Brac\nkets", "radius": 60, "position": 1, "strokeColor":
+                      "#5d78ff"}, "18": {"id": 18, "url": "/course/2/lessons/18", "name": "Шестой
+                      урок", "radius": 60, "position": 5, "strokeColor": "#5d78ff"}, "19": {"id":
+                      19, "url": "/course/2/lessons/19", "name": "Седьмой урок", "radius": 60, "position":
+                      6, "strokeColor": "#5d78ff"}, "20": {"id": 20, "url": "/course/2/lessons/20",
+                      "name": "Восьмой урок", "radius": 60, "position": 7, "strokeColor": "#5d78ff"},
+                      "106": {"id": 106, "url": "/course/2/lessons/106", "name": "Введение", "radius":
+                      60, "position": 0, "strokeColor": "#5d78ff"}, "270": {"url": "/course/2/lessons/270",
+                      "name": "Test Lessson", "radius": 60}}, "layouts": {"nodes": {"14": {"x": 150,
+                      "y": -110}, "15": {"x": 360, "y": 130}, "16": {"x": 390, "y": -130}, "17": {"x":
+                      40, "y": 70}, "18": {"x": 490, "y": 10}, "19": {"x": 640, "y": -120}, "20":
+                      {"x": 770, "y": 0}, "106": {"x": -50, "y": -110}, "268": {"x": 130, "y": 0},
+                      "269": {"x": 260, "y": 0}, "270": {"x": 210, "y": 50}}}}'
+                    use_lesson_schema_graph: 0
+                  logo: https://a.lmska.com/storage/logos/courses/2/logo.png
+                  logo_type: png
+                  subway_station:
+                  location_name:
+                  created_at: '2021-12-31T11:11:57.000000Z'
+                  updated_at: '2022-07-18T08:59:11.000000Z'
+                  fill_step:
+                    id: 1
+                    main_setting_step: 1
+                    ticket_schema_step: 1
+                    mail_test_step: 0
+                    register_form_step: 1
+                    site_course_step: 1
+                    payment_method_step: 1
+                    course_id: 2
+                    created_at: '2021-12-31T11:11:58.000000Z'
+                    updated_at: '2022-07-20T10:28:58.000000Z'
+                    promo_codes_step: 0
+                    streaming_links_step: 0
+                  statistics: []
+                  finances: []
+                  stream_schemas: []
+                  test_questions_amount: 12
+                  rates:
+                    average_rate: 4.55
+                    count: 3
+                    rate_weight: '{"5":33,"4":66,"3":0,"2":0,"1":0}'
+                  user_info: 0
+                  is_available: 1
+                  available_to:
+                  diploma_template:
+                    id: 4
+                    course_id: 2
+                    template_name: '7'
+                    title: Test Diploma
+                    custom_logo: https://a.lmska.com/storage/materials/2/whiteLMS.png
+                    lang: en
+                    created_at: '2022-04-27T15:45:40.000000Z'
+                    updated_at: '2022-04-28T15:43:35.000000Z'
+                  school_name: Балабольня
+                  is_public: 1
+                  student_referral_percent: 5
+

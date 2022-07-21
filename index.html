@@ -7708,4 +7708,352 @@ pre code {
   "is_passed": 1,
   "created_at": "2022-07-05T10:45:59.000000Z",
   "updated_at": "2022-07-05T10:47:05.000000Z"
-}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li><li><a href="#courses_users">Users of Course 2.0</a></li><li><a href="#advices">Advices</a></li><li><a href="#fee_promocodes">Fee Promocodes</a></li><li><a href="#tests_pass__test_id_">Answers on Test Lssson of Course</a></li><li><a href="#homeworks__homework_id__passes">Send homework Type 3 on Lssson of Course</a></li><li><a href="#courses__course_id__form">Form of Course</a></li><li><a href="#courses__course_id__orders_tickets_schemas">Tarifs of Course</a></li><li><a href="#courses__course_id__payment_systems">Payments Systems of Course</a></li><li><a href="#courses__course_id__final_test_testing__id_">Pass Final test of Course</a></li></ul></div></div></div></div></body></html>
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="public_course_category_29_my_0" class="panel-title">Public Course</h3></div><div class="panel-body"><div class="top-resource-description"><p>Get public course</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_public_course_category_29_my_0"><span class="parent"></span>/public-course?category=29&my=0</a> <span class="methods"><a href="#public_course_category_29_my_0_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_public_course_category_29_my_0" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#public_course_category_29_my_0_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get public course all, by category and auth or not user</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="public_course_category_29_my_0_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/public-course?category=29&my=0</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get public course all, by category and auth or not user</p></div><ul class="nav nav-tabs"><li class="active"><a href="#public_course_category_29_my_0_get_request" data-toggle="tab">Request</a></li><li><a href="#public_course_category_29_my_0_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="public_course_category_29_my_0_get_request"><h3>Query Parameters</h3><ul><li><strong>category</strong>: <em>(int)</em><p>ID Category</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>29</code></pre></div></li><li><strong>my</strong>: <em>(int)</em><p>1 - Auth user course 0 - Not auth user course</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>1</code></pre></div></li></ul></div><div class="tab-pane" id="public_course_category_29_my_0_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: object</p><p><strong>Example</strong>:</p><div class="examples"><p><strong>result</strong>:<br></p><pre><code>{
+  "data": [
+    {
+      "id": 15,
+      "title": "Курс не для слабонервных",
+      "description": "&lt;p&gt;blahblah&lt;/p&gt;",
+      "address": "online",
+      "address_lat": null,
+      "address_lng": null,
+      "registration_start": "2022-05-05 09:21:00",
+      "registration_end": "2022-05-20 09:21:00",
+      "course_start": "2022-07-12 11:00:00",
+      "course_end": "2022-07-31 11:00:00",
+      "owner": {
+        "id": 6,
+        "first_name": "!$$$novalue",
+        "last_name": "!$$$novalue",
+        "avatar": "https://a.lmska.com/storage/default.png",
+        "telephone_code": "380",
+        "telephone_number": "663703106",
+        "company": "!$$$novalue",
+        "email": "dorofeevn95@gmail.com",
+        "role": {
+          "id": 2,
+          "name": "Owner",
+          "role": "owner"
+        }
+      },
+      "setting": {
+        "status": {
+          "id": 2,
+          "name": "Active",
+          "status": "active"
+        },
+        "category": {
+          "id": 29,
+          "name": "Programming",
+          "category": "programming",
+          "locales": {
+            "en": "Programming",
+            "ua": "Програмування",
+            "ru": "Программирование"
+          }
+        },
+        "subject": {
+          "id": 1,
+          "name": "Informational technologies",
+          "subject": "information_technologies"
+        },
+        "recount_currency": "!$$$novalue",
+        "payment_currency": {
+          "id": 5,
+          "name": "Poland Zloty",
+          "currency": "zloty",
+          "iso_code": "pln"
+        },
+        "check_in": "!$$$novalue",
+        "language": {
+          "id": 2,
+          "name": "Ukrainian",
+          "language": "ukrainian",
+          "iso_code": "ua"
+        },
+        "country": {
+          "id": 1,
+          "name": "Ukraine",
+          "country": "ukraine",
+          "iso_code": "ua",
+          "languages": [
+            {
+              "id": 2,
+              "name": "Ukrainian",
+              "language": "ukrainian",
+              "iso_code": "ua"
+            },
+            {
+              "id": 3,
+              "name": "Russian",
+              "language": "russian",
+              "iso_code": "ru"
+            },
+            {
+              "id": 6,
+              "name": "Hungarian",
+              "language": "hungarian",
+              "iso_code": "hu"
+            },
+            {
+              "id": 7,
+              "name": "Romanian",
+              "language": "romanian",
+              "iso_code": "ro"
+            }
+          ],
+          "currencies": [
+            {
+              "id": 1,
+              "name": "Ukrainian Hryvnia",
+              "currency": "hryvnia",
+              "iso_code": "uah"
+            },
+            {
+              "id": 4,
+              "name": "Russian Ruble",
+              "currency": "ruble",
+              "iso_code": "rub"
+            }
+          ]
+        },
+        "fix_commission": "!$$$novalue",
+        "percent_commission": "!$$$novalue",
+        "self_system_commission_included_payment": true,
+        "payment_system_commission_included_payment": true,
+        "payment_activated": true,
+        "ticket_description_top": "!$$$novalue",
+        "ticket_description_bottom": "!$$$novalue",
+        "contact_email": "!$$$novalue",
+        "is_contact_email_verified": 0,
+        "contact_phone": "!$$$novalue",
+        "contact_telegram": "!$$$novalue",
+        "contact_name": "!$$$novalue",
+        "offer_text": "!$$$novalue",
+        "affiliate_text": "!$$$novalue",
+        "registration_first_step_text": "\r\n    &lt;p&gt;EN:&lt;/p&gt;\r\n&lt;p&gt;When registering for the Курс не для слабонервных course, you (or someone else) specified this email as a contact email. An account has been created for you at &lt;a href=\"https://c.lmska.net\"&gt;https://c.lmska.net&lt;/a&gt;\r\nYou can see your orders and change ticket data in your account on your own&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;p&gt;УК:&lt;/p&gt;\r\n&lt;p&gt;При реєстрації на подію Курс не для слабонервных ви (або хтось інший) вказали цей email як контактний. Вам був створений кабінет за адресою &lt;a href=\"https://c.lmska.net\"&gt;https://c.lmska.net&lt;/a&gt;\r\nВи можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;p&gt;РУ:&lt;/p&gt;\r\n&lt;p&gt;При регистрации на событие Курс не для слабонервных вы ( или кто то другой) указали этот email как контактный. Вам был создан кабинет по адресу\r\n&lt;a href=\"https://c.lmska.net\"&gt;https://c.lmska.net&lt;/a&gt;\r\nВы можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно&lt;/p&gt;",
+        "ticket_with_text": "!$$$novalue",
+        "online_text": "!$$$novalue",
+        "course_url": "!$$$novalue",
+        "fb_link_group": "!$$$novalue",
+        "available_duplicate_contacts": 0,
+        "use_ticket_schema_emails": 0,
+        "lesson_schema_graph": "[]",
+        "use_lesson_schema_graph": 0
+      },
+      "logo": "https://lmska-bucket-2.s3.eu-central-1.amazonaws.com/public/materials/15/FJuILHOWTt2yaX9e3j6m35bLYaNK0CW9c0BTeO9A.jpg",
+      "logo_type": "png",
+      "subway_station": null,
+      "location_name": null,
+      "created_at": "2022-05-05T06:23:04.000000Z",
+      "updated_at": "2022-07-12T08:00:17.000000Z",
+      "fill_step": {
+        "id": 11,
+        "main_setting_step": 1,
+        "ticket_schema_step": 1,
+        "mail_test_step": 0,
+        "register_form_step": 1,
+        "site_course_step": 1,
+        "payment_method_step": 0,
+        "course_id": 15,
+        "created_at": "2022-05-05T06:23:04.000000Z",
+        "updated_at": "2022-07-12T08:02:09.000000Z",
+        "promo_codes_step": 0,
+        "streaming_links_step": 0
+      },
+      "statistics": [],
+      "finances": [],
+      "stream_schemas": [],
+      "test_questions_amount": 0,
+      "rates": {
+        "average_rate": 0,
+        "count": 0,
+        "rate_weight": "{\"5\":0,\"4\":0,\"3\":0,\"2\":0,\"1\":0}"
+      },
+      "user_info": 0,
+      "is_available": 1,
+      "available_to": null,
+      "diploma_template": null,
+      "school_name": "Ммм",
+      "is_public": 1,
+      "student_referral_percent": 1
+    },
+    {
+      "id": 2,
+      "title": "Тестовий курс",
+      "description": "&lt;p&gt;Описание для тестового курса&lt;/p&gt;",
+      "address": "online",
+      "address_lat": null,
+      "address_lng": null,
+      "registration_start": "2021-12-31 13:11:00",
+      "registration_end": "2025-12-31 13:11:00",
+      "course_start": "2021-12-31 13:11:00",
+      "course_end": "2022-12-31 09:00:00",
+      "owner": {
+        "id": 3,
+        "first_name": "Андрей",
+        "last_name": "Голуб",
+        "avatar": "https://a.lmska.com/storage/public/logos/users/jO5AFN36TxxLqL8D1XJdyR8okSCFYg3M9m8ypY8h.jpg",
+        "telephone_code": "380",
+        "telephone_number": "676654620",
+        "company": "!$$$novalue",
+        "email": "a@rte.im",
+        "role": {
+          "id": 1,
+          "name": "Administrator",
+          "role": "admin"
+        }
+      },
+      "setting": {
+        "status": {
+          "id": 2,
+          "name": "Active",
+          "status": "active"
+        },
+        "category": {
+          "id": 29,
+          "name": "Programming",
+          "category": "programming",
+          "locales": {
+            "en": "Programming",
+            "ua": "Програмування",
+            "ru": "Программирование"
+          }
+        },
+        "subject": {
+          "id": 1,
+          "name": "Informational technologies",
+          "subject": "information_technologies"
+        },
+        "recount_currency": "!$$$novalue",
+        "payment_currency": {
+          "id": 2,
+          "name": "American Dollar",
+          "currency": "american_dollar",
+          "iso_code": "usd"
+        },
+        "check_in": "!$$$novalue",
+        "language": {
+          "id": 2,
+          "name": "Ukrainian",
+          "language": "ukrainian",
+          "iso_code": "ua"
+        },
+        "country": {
+          "id": 1,
+          "name": "Ukraine",
+          "country": "ukraine",
+          "iso_code": "ua",
+          "languages": [
+            {
+              "id": 2,
+              "name": "Ukrainian",
+              "language": "ukrainian",
+              "iso_code": "ua"
+            },
+            {
+              "id": 3,
+              "name": "Russian",
+              "language": "russian",
+              "iso_code": "ru"
+            },
+            {
+              "id": 6,
+              "name": "Hungarian",
+              "language": "hungarian",
+              "iso_code": "hu"
+            },
+            {
+              "id": 7,
+              "name": "Romanian",
+              "language": "romanian",
+              "iso_code": "ro"
+            }
+          ],
+          "currencies": [
+            {
+              "id": 1,
+              "name": "Ukrainian Hryvnia",
+              "currency": "hryvnia",
+              "iso_code": "uah"
+            },
+            {
+              "id": 4,
+              "name": "Russian Ruble",
+              "currency": "ruble",
+              "iso_code": "rub"
+            }
+          ]
+        },
+        "fix_commission": "0.000",
+        "percent_commission": "0.00",
+        "self_system_commission_included_payment": true,
+        "payment_system_commission_included_payment": true,
+        "payment_activated": true,
+        "ticket_description_top": "!$$$novalue",
+        "ticket_description_bottom": "!$$$novalue",
+        "contact_email": "flokiowl@gmail.com",
+        "is_contact_email_verified": 1,
+        "contact_phone": "+380676654620",
+        "contact_telegram": "https://t.me/flokiowl",
+        "contact_name": "Зинаида Петровна",
+        "offer_text": "!$$$novalue",
+        "affiliate_text": "!$$$novalue",
+        "registration_first_step_text": "\n\n    &lt;p&gt;EN:&lt;/p&gt;\n&lt;p&gt;When registering for the Тестовый курс course, you (or someone else) specified this email as a contact email. An account has been created for you at &lt;a href=\"https://c.rte.im\"&gt;https://c.rte.im&lt;/a&gt;\nYou can see your orders and change ticket data in your account on your own&lt;/p&gt;\n&lt;br/&gt;\n&lt;p&gt;УК:&lt;/p&gt;\n&lt;p&gt;При реєстрації на подію Тестовый курс ви (або хтось інший) вказали цей email як контактний. Вам був створений кабінет за адресою &lt;a href=\"https://c.rte.im\"&gt;https://c.rte.im&lt;/a&gt;\nВи можете бачити ваші замовлення і міняти дані про квиток в кабінеті самостійно&lt;/p&gt;\n&lt;br/&gt;\n&lt;p&gt;РУ:&lt;/p&gt;\n&lt;p&gt;При регистрации на событие Тестовый курс вы ( или кто то другой) указали этот email как контактный. Вам был создан кабинет по адресу\n&lt;a href=\"https://c.rte.im\"&gt;https://c.rte.im&lt;/a&gt;\nВы можете видеть ваши заказы и менять данные о билете в кабинете самостоятельно&lt;/p&gt;",
+        "ticket_with_text": "!$$$novalue",
+        "online_text": "!$$$novalue",
+        "course_url": "https://pornhub.com",
+        "fb_link_group": "https://www.facebook.com/friends/requests/?profile_id=100080512400322",
+        "available_duplicate_contacts": 0,
+        "use_ticket_schema_emails": 0,
+        "lesson_schema_graph": "{\"edges\": {\"1\": {\"source\": \"106\", \"target\": \"17\"}, \"2\": {\"source\": \"17\", \"target\": \"14\"}, \"3\": {\"source\": \"14\", \"target\": \"16\"}, \"4\": {\"source\": \"16\", \"target\": \"15\"}, \"5\": {\"source\": \"15\", \"target\": \"18\"}, \"6\": {\"source\": \"18\", \"target\": \"19\"}, \"7\": {\"source\": \"19\", \"target\": \"20\"}}, \"nodes\": {\"14\": {\"id\": 14, \"url\": \"/course/2/lessons/14\", \"name\": \"HTML теги (\\nтеория)\", \"radius\": 60, \"position\": 2, \"strokeColor\": \"#5d78ff\"}, \"15\": {\"id\": 15, \"url\": \"/course/2/lessons/15\", \"name\": \"HTML теги фо\\nрматирования\\n текста\", \"radius\": 60, \"position\": 4, \"strokeColor\": \"#fd397a\"}, \"16\": {\"id\": 16, \"url\": \"/course/2/lessons/16\", \"name\": \"Создание ске\\nлета HTML до\\nкумента\", \"radius\": 60, \"position\": 3, \"strokeColor\": \"#5d78ff\"}, \"17\": {\"id\": 17, \"url\": \"/course/2/lessons/17\", \"name\": \"Установка ре\\nдактора Brac\\nkets\", \"radius\": 60, \"position\": 1, \"strokeColor\": \"#5d78ff\"}, \"18\": {\"id\": 18, \"url\": \"/course/2/lessons/18\", \"name\": \"Шестой урок\", \"radius\": 60, \"position\": 5, \"strokeColor\": \"#5d78ff\"}, \"19\": {\"id\": 19, \"url\": \"/course/2/lessons/19\", \"name\": \"Седьмой урок\", \"radius\": 60, \"position\": 6, \"strokeColor\": \"#5d78ff\"}, \"20\": {\"id\": 20, \"url\": \"/course/2/lessons/20\", \"name\": \"Восьмой урок\", \"radius\": 60, \"position\": 7, \"strokeColor\": \"#5d78ff\"}, \"106\": {\"id\": 106, \"url\": \"/course/2/lessons/106\", \"name\": \"Введение\", \"radius\": 60, \"position\": 0, \"strokeColor\": \"#5d78ff\"}, \"270\": {\"url\": \"/course/2/lessons/270\", \"name\": \"Test Lessson\", \"radius\": 60}}, \"layouts\": {\"nodes\": {\"14\": {\"x\": 150, \"y\": -110}, \"15\": {\"x\": 360, \"y\": 130}, \"16\": {\"x\": 390, \"y\": -130}, \"17\": {\"x\": 40, \"y\": 70}, \"18\": {\"x\": 490, \"y\": 10}, \"19\": {\"x\": 640, \"y\": -120}, \"20\": {\"x\": 770, \"y\": 0}, \"106\": {\"x\": -50, \"y\": -110}, \"268\": {\"x\": 130, \"y\": 0}, \"269\": {\"x\": 260, \"y\": 0}, \"270\": {\"x\": 210, \"y\": 50}}}}",
+        "use_lesson_schema_graph": 0
+      },
+      "logo": "https://a.lmska.com/storage/logos/courses/2/logo.png",
+      "logo_type": "png",
+      "subway_station": null,
+      "location_name": null,
+      "created_at": "2021-12-31T11:11:57.000000Z",
+      "updated_at": "2022-07-18T08:59:11.000000Z",
+      "fill_step": {
+        "id": 1,
+        "main_setting_step": 1,
+        "ticket_schema_step": 1,
+        "mail_test_step": 0,
+        "register_form_step": 1,
+        "site_course_step": 1,
+        "payment_method_step": 1,
+        "course_id": 2,
+        "created_at": "2021-12-31T11:11:58.000000Z",
+        "updated_at": "2022-07-20T10:28:58.000000Z",
+        "promo_codes_step": 0,
+        "streaming_links_step": 0
+      },
+      "statistics": [],
+      "finances": [],
+      "stream_schemas": [],
+      "test_questions_amount": 12,
+      "rates": {
+        "average_rate": 4.55,
+        "count": 3,
+        "rate_weight": "{\"5\":33,\"4\":66,\"3\":0,\"2\":0,\"1\":0}"
+      },
+      "user_info": 0,
+      "is_available": 1,
+      "available_to": null,
+      "diploma_template": {
+        "id": 4,
+        "course_id": 2,
+        "template_name": "7",
+        "title": "Test Diploma",
+        "custom_logo": "https://a.lmska.com/storage/materials/2/whiteLMS.png",
+        "lang": "en",
+        "created_at": "2022-04-27T15:45:40.000000Z",
+        "updated_at": "2022-04-28T15:43:35.000000Z"
+      },
+      "school_name": "Балабольня",
+      "is_public": 1,
+      "student_referral_percent": 5
+    }
+  ]
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#register">Register</a></li><li><a href="#auth">Auth</a></li><li><a href="#forgotpassword">Forgot password?</a></li><li><a href="#courses">Courses</a></li><li><a href="#courses__id__lessons">Lessons of Course</a></li><li><a href="#users_courses">Users courses</a></li><li><a href="#showprofile">Profile</a></li><li><a href="#updateprofile">Update Profile</a></li><li><a href="#attachments">Update Avatar</a></li><li><a href="#courses__id__rates">Rates of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__comments">Comments (Child Comment) Lesson of Course</a></li><li><a href="#courses__course_id__lessons__lesson_id__homeworks">Homework Lesson of Course</a></li><li><a href="#courses__course_id_">Single Course</a></li><li><a href="#tests">Tests of Course</a></li><li><a href="#tests__id_">Single Tests of Course</a></li><li><a href="#courses_categories">Categories of Course</a></li><li><a href="#courses__course_id__final_test_testing">Final Testing of Course</a></li><li><a href="#courses__course_id__final_test">Final Test of Course</a></li><li><a href="#users_chats__chat_id_">User Chat</a></li><li><a href="#users__chat_id__chats_send">Send Mesasge to Chat</a></li><li><a href="#courses_orders">User Orders to Chat</a></li><li><a href="#courses__course_id__student_ref">Referal Program of Course</a></li><li><a href="#ref">Referal Program 1/2</a></li><li><a href="#ref__id_">Referal Program 2/2</a></li><li><a href="#courses_users">Courses Users</a></li><li><a href="#courses_users">Users of Course 2.0</a></li><li><a href="#advices">Advices</a></li><li><a href="#fee_promocodes">Fee Promocodes</a></li><li><a href="#tests_pass__test_id_">Answers on Test Lssson of Course</a></li><li><a href="#homeworks__homework_id__passes">Send homework Type 3 on Lssson of Course</a></li><li><a href="#courses__course_id__form">Form of Course</a></li><li><a href="#courses__course_id__orders_tickets_schemas">Tarifs of Course</a></li><li><a href="#courses__course_id__payment_systems">Payments Systems of Course</a></li><li><a href="#courses__course_id__final_test_testing__id_">Pass Final test of Course</a></li><li><a href="#public_course_category_29_my_0">Public Course</a></li></ul></div></div></div></div></body></html>
